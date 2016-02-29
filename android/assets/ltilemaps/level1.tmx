@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="29" tilewidth="16" tileheight="16" nextobjectid="163">
+ <tileset firstgid="1" name="ruins" tilewidth="16" tileheight="16" spacing="2" margin="1">
+  <image source="tilesets/ruins.png" width="414" height="288"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="50" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztztEJwCAMhGGX7kIW2hkU6mzNBomcoQX/D457OUJKAQAAAAB86Uja7qJaTqFn72f90yxdaI+6j/ZluYX2qPtoP5YhtEfdr/oDAP7iBQDVXms=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="50" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztVMFSAjEMrTiKfoCjHlb/ZlXEC15dYMGLngU/wsVvNh3yZp7ZtrvKwKlv5k2aJt2XJgXnMjIyMjIyMjIyMjIyDoMj5YDWMZ4Jz835E+Fpj7Nd9PrHO2iUwjtiGdhjPhuNiYlfykdXLswPJdY+F1qsG9OwuXymEk6JVWCP+R7QQMx/r0nwS9mQ5dqgG9Oo3O8audZdMTH35n6vAvkcX7t2P1MaKQzd9k0OlQMXfqOpe3AvP922z7F7rDXHz2Pj2u8jpZGq1b9RRxa4MH7qHjzfb6o1dI+N5uCepet+H9BI1fqie9OI7cKbqaOhWptAvv198JuP3QMaqVpvxN4qsb4SFspQ3PqFOWvJcfuNVH7h2nX4+LXJ8Zb/L/rae+FDj7yx8En9sfE5byR8VB/rv9Zl59rHzoRz9aFb0f2wtxS+6v6SfMTxvVq4UB/rKpCXsv+ZB/cPuryPPXtupjmxuLU1zXAf80Ad3H/oLSgPccS43yPTb6yRCz3McB/z4P7OtTboheKI8fnazAXr0Hf62B9mPpX+
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="50" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztzssKQVEUgGG8gLuMDN0VytD1MDN0pyhDdx7SW3gW/1Ane3NqHzu1/vrq1FnttQIBSZIkSZIkyWRhRBBFDHEkkLR5lCLdrVnkkEcBRZRQtnKpPt2tIdRQR/rlu2rlUn2/vLWJFtrooOvSg4M+Bj7sN9UIY0wwxcxljgWWWFm68Zt22OOAI04uZ1xwxc3Sjd+UCvoz61cZxQ0VD7fpZlXvm66h2NP3sF83q3rfdEPFHsfD/nez9w/vm26r2LPQ7F/zbxPUzz4+vC9JkvTvPQEU3hh/
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="50" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzt0bERwCAMQ1HYhC3YIitAw/4rkCZ3prDTytx/ldTJ51IAAAAAqGv1P6uItt5yRzfdyyqirY/pXlYRbV2me1lFpq04jfdHM8mfMm0FgM8GOeoInQ==
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="133" x="-7" y="-112" width="800" height="96"/>
+  <object id="134" name="plat" x="384" y="304">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="140" name="plat" x="0" y="320">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="141" name="plat" x="0" y="224">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="142" name="plat" x="0" y="192">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="143" name="plat" x="0" y="256">
+   <polyline points="0,0 208,0"/>
+  </object>
+  <object id="144" name="plat" x="0" y="304">
+   <polyline points="0,0 256,0"/>
+  </object>
+  <object id="145" name="plat" x="256" y="256">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="146" name="plat" x="464" y="256">
+   <polyline points="0,0 144,0"/>
+  </object>
+  <object id="148" name="plat" x="368" y="256">
+   <polyline points="0,0 96,0"/>
+  </object>
+  <object id="149" name="plat" x="576" y="304">
+   <polyline points="0,0 80,0"/>
+  </object>
+  <object id="150" name="plat" x="688" y="320">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="151" name="plat" x="704" y="304">
+   <polyline points="0,0 96,0"/>
+  </object>
+  <object id="152" name="plat" x="656" y="256">
+   <polyline points="0,0 144,0"/>
+  </object>
+  <object id="153" name="plat" x="688" y="224">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="154" name="plat" x="688" y="192">
+   <polyline points="0,0 112,0"/>
+  </object>
+  <object id="155" x="0" y="368" width="800" height="96"/>
+  <object id="157" x="-64" y="192" width="64" height="176"/>
+  <object id="158" x="800" y="192" width="80" height="176"/>
+ </objectgroup>
+ <objectgroup name="Entities">
+  <object id="159" name="jumpr" x="160" y="208" width="48" height="48"/>
+  <object id="160" name="jumpl" x="256" y="208" width="48" height="48"/>
+  <object id="161" name="jumpr" x="560" y="208" width="48" height="48"/>
+  <object id="162" name="jumpl" x="656" y="208" width="48" height="48"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="29" tilewidth="16" tileheight="16" nextobjectid="158">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420">
+  <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="100" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztWUtOwzAUdOAASLCG7ikqWy5AQUWqBAX2SBTY8D0BtCDxPwHfU3AXuAdseZEaKbFsZ57txI2akUZJG+fZnvF7rlwhMMxGQsxF6me/xD8wTmi0aA7LmnkkMM3Vxzs28WWY5uEjflno0Dg3csaKeObyjk18GaZ5+IhfFhA/kDYu79jEl2GqST7il4Wi/ODUCB96mfqr/eDVCB96mfqr/Si/Xpli1H6UX6/Q/WOTrlvEHnGbuEPcHSOvxqleqbRCge4fx3Q9IZ4Sz4jnxIsJ8MOmXqm0QiH7f0n3V8RBlM2dO/p8T3wgPhKfiM8V8+Nb2NWrH7Bta9RWpRUKeR4vdP9KfIuw2jlQMAQ6gG629Qo9o+gw2uqQ5MCQYl0Tb1LjRWvnuPiRpwXimYw4p9D9nNNWhyQH3okfxM9UPM564vgRh5wCOQ3OA6lFNus3Xq+oxnFb1/MMXQ706bsD4iHxiJkjeZgnLoBsIJMQ2NqxOY/j/L5yPe/riew8epZxVqKsH21hXvOrQr3vqNgGx1DUeSKnRric990aqINO3xjoeo+JepGXb41R/3Iuq8bIzfcEZZ2XxLp3RdaH5LMOOn256Ee4F3m5xFkH6RqI7F1cD338PzFUUAWXdSxjkdF2D+ybSxsP8+D6/4Tsw5cox48i9C2aMTi5JD9HoMoNFz9QT0JrW1ZOcWu6Tz84CK1rCOq0tiFHQwShtan9yCK0NlX0Y0bw/OAgtDZV9KM5uqL9cRBamyr6sSbFWwL6RBFaGxu6jttHvUrHW8/pr4tZ4TyvSfWjKcXbl57L/XAQWtt2gD591CtZ67zfYChC+xGC/xdvZCU=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="100" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztWLlOAzEQTYgEVRAtR4KAKoiWKxGiCg1XgSA14Tu4AnwF90cgKIHvACpA4i+YSIlkWePxjNfeXZCf9JRjx8fOG4/HLhQiIiIiIiIiIiIiIiL+ForAAWCJeKYTs80KJzDJU2CnmKyfM2h/Drxg9PMMfAG+JhsSRQVYBU4Sz3RitmlB99sVfF4DbxLqcQvt74D3jH7egO/Aj2RDovgEfgG/kWcThrkNB5gHFxy/2WJdsqZ8rT8fWII5VJF5zKY0vqsvbJpJ1hTXFsvrIfJ8HdFkzUO/HPjKRWkAy+u2PG/an23a6XmrnXTy/xAdBrtxvKPQtD/b9mhMRwqSdekaI3kDRw89jg8JWwoV4dwk9RcVI/1lyYmFrHXk6HEE3FL4QNhSKDPH67Nbf3H2N5vvpHEghU8NOX550to8ErYUpHpQMS/Jk2XLvEzIoh7n+GVEa3NJ2OpQa02pHhI/Ur5LUw9bm5JGHRy/zGltDghbHWqtKdWjZnk3FdRZJk962MDxy5RWpx4TthRqzPH6bAregzrLSHRVkUc9ZkCLFeQcRelhumdoMsZTuS94D8oPEl25ffpso8KmxarhTDtNnHVN9wwh94+85Kukd0A/Bg6CL4c83y9I85Ukz1D5Kk090roDcoVaX0nzlSTPtIlnrnq4xDo1jzwgSX3lq9513c9dYj2Peqhn+W3gZu97yHo3xH7u4lsfeiwD68AG8n+D+D0KMT+GcFzZdzaA673vIevdEOfBrPTYBe4BW8j/LeL3PPh9AeGioQ4IWe9Sud41X2Whxy/P19lo
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztmEEOwUAYhacJF+ACYi1cQCwtOABlJ4I9ZWfhApStc4grcQC2nqRImo40qfqnnfclr8vp+/8vmcUoZTY35C5dgryhD7MoOUqVHekW5EUdLhr0YQwduOjShzHQh1nQRzJ62F0fcYMMkGGCfebZR3hXbgpzznHmAvGCLJEVfUQS3pWXwpxbnLlD/CB75EAfkYR35Wdgzjz7yCL0YRb0YRZ8LzELvpfEY6NJ+8f/4X0Vj3/4eGqY4DNFZnTyFZ2PkWQpi9H5WEuWshidj5NkKYvR+ThLlrKUiqP3UZMsZilN+KhqnBxFm9lLS+NkLFvLagrwUUQu6pOrcCdCCCHERh5Nxz2y
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="100" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzt1jENACAAA8EaQAg2Uc7MQBjpcJdUwS9NAAAAAACAX9Zl/KFHFz266NFFjy56AADAacQvbjKjx8sGNNAUhw==
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="101" x="0" y="208" width="160" height="128"/>
+  <object id="102" x="208" y="224" width="128" height="112"/>
+  <object id="103" x="240" y="336" width="16"/>
+  <object id="104" x="16" y="448" width="48" height="16"/>
+  <object id="105" x="112" y="448" width="32" height="16"/>
+  <object id="106" x="176" y="448" width="32" height="16"/>
+  <object id="107" x="240" y="448" width="112" height="16"/>
+  <object id="108" x="432" y="240" width="208" height="224"/>
+  <object id="109" x="624" y="272" width="192" height="192"/>
+  <object id="110" x="800" y="240" width="128" height="224"/>
+  <object id="111" x="912" y="256" width="240" height="208"/>
+  <object id="112" x="1152" y="272" width="208" height="192"/>
+  <object id="113" x="1360" y="304" width="240" height="160"/>
+  <object id="114" x="1600" y="152" width="184.848" height="320"/>
+  <object id="115" x="-213" y="-16" width="213.287" height="369.697"/>
+  <object id="116" name="plat" x="192" y="192">
+   <polyline points="0,0 41.3333,0"/>
+  </object>
+  <object id="117" name="plat" x="230.125" y="159.75">
+   <polyline points="0,0 41.875,0.25"/>
+  </object>
+  <object id="118" name="plat" x="288" y="144">
+   <polyline points="0,0 224,0"/>
+  </object>
+  <object id="119" name="plat" x="390.455" y="303.909">
+   <polyline points="0,0 41.5455,0.0909091"/>
+  </object>
+  <object id="120" name="plat" x="336" y="352">
+   <polyline points="0,0 40.6667,0"/>
+  </object>
+  <object id="121" name="plat" x="390.333" y="399.667">
+   <polyline points="0,0 41.6667,0.333333"/>
+  </object>
+  <object id="122" name="plat" x="918.182" y="191.818">
+   <polyline points="0,0 41.8182,0.181818"/>
+  </object>
+  <object id="123" name="plat" x="992" y="160">
+   <polyline points="0,0 40.5,0"/>
+  </object>
+  <object id="124" name="plat" x="1063.75" y="143.75">
+   <polyline points="0,0 40.25,0.25"/>
+  </object>
+  <object id="125" name="plat" x="1136" y="176">
+   <polyline points="0,0 39.5,-0.25"/>
+  </object>
+  <object id="126" name="plat" x="1270.5" y="175.75">
+   <polyline points="0,0 41.5,0.25"/>
+  </object>
+  <object id="127" name="plat" x="1344" y="144">
+   <polyline points="0,0 40.5,0"/>
+  </object>
+  <object id="128" name="plat" x="1448.75" y="175.5">
+   <polyline points="0,0 39.25,0.5"/>
+  </object>
+  <object id="129" name="plat" x="1520" y="144">
+   <polyline points="0,0 80,0"/>
+  </object>
+  <object id="130" name="plat" x="624" y="208">
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object id="131" name="plat" x="336" y="256">
+   <polyline points="0,0 96,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Entities">
+  <object id="140" name="hint Hello there! Press A/D to move." x="14.3332" y="-28.6667" width="102" height="233.333"/>
+  <object id="141" name="hint Try hitting SPACE." x="125.667" y="-26.6667" width="37.3333" height="229.333"/>
+  <object id="144" name="hint Very good!" x="217.333" y="-44" width="80" height="260"/>
+  <object id="145" name="hint Try to stay in the trees." x="926" y="236" width="686.667" height="72"/>
+  <object id="148" name="coin" x="44" y="431"/>
+  <object id="149" name="coin" x="125" y="422" width="15" height="16"/>
+  <object id="150" name="coin" x="197" y="429"/>
+  <object id="151" name="coin" x="410" y="382"/>
+  <object id="152" name="coin" x="362" y="334"/>
+  <object id="153" name="coin" x="411" y="285"/>
+  <object id="154" name="coin" x="364" y="125"/>
+  <object id="155" name="coin" x="940" y="170"/>
+  <object id="156" name="coin" x="1022" y="141"/>
+  <object id="157" name="coin" x="1548" y="126"/>
+ </objectgroup>
+</map>

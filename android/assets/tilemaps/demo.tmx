@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="149" height="25" tilewidth="16" tileheight="16" nextobjectid="163">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420">
+  <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="149" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztmDlSAkEUhruvIJF4BKs0Eu+AEeAVXBKXI7gGIEcA3O7hdgy3WD2ApP4Ek1BTbY/17Pdo/q/qKwh66O1n3vQ4p8uCd67mlQdBsmIFeVplpoggTeRpAz7g+yN8Uh4PmX0mte8Fn6/wDb4rj4fIcgNvE/dppfZpzH0euIP3Lm0dKmqfNsXc541FrH0dLkXsQQtt2rATcHPqd75d+jo06XOcoJ/fKM6fp/AMnhvIeQrWMM8GXI+Y7x7a7MODgIclmUq9v1beJRT/p0uM5QpeGxhTCj7gJ/yKaNvFmvTgRcD+1Lpp7K+V5ykr2f4PqtQ3aTT2V3Mvj9DvMTzxdrIdw3LF9lXqmzQaz8uaezlAv0M4gs/OxlkhhqqZ0mIL67kNd+BuwrW1cO7TmvtfqPtyY9qErsmJWao5Fmj4cmPahK7JCQv3KZIXVt5PkXzI+QxPdOB9ikjDTBFpmCkiDTNFpGGmiDTMFJGGmSLSMFNEGmYqP34Au1tT7Q==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="149" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztmUtOAzEQRD38suKzBcR/BcoW2AR2CVdgmxyFQ3IP4AK0lIlkRelMu93uSZwqqZSVy2X7yZqZhACV1EETwiH5nvwVeA977FijvlvXrC62znptV5d+yL+t/3ru4iGOLdxTtprQ/n40fbfw1XvL1QP5iDzYsfVDZXRLHN2BJchQI+LpDUxBO6hz4v6CfAn+q5X3GT/TPC/kVzBVrbzP+DTge0etiu8nzzMGU/Uqvp9SzjiXidTxexneZzIbg4xSmZIcaSdtv9ijML97JI7PdvGbOk46V87466D3DbO/VwYZpTIlOdJO2n6xP8P87pF4FVOp46Rz5Yxf979ml0+Y/X00yMjJnKzJGRt20vbTehVTmnG585b0E7O/knPrypBmWknTKVbKmsEUb+4+mBpkSDOtpOkUK2XNYIr3jNnfY4MMaaaVNJ1ipawZTPHmnju2lanFL5jabqakz8OeTGme0cEUmFoWmAJTJZhK7RQLTG0OU9L3do8zS+3k3Q9MySx9b/dkSvMtAUxtDlMzJiMnM9fSTt79wFReRk5mqXX13W/5bIfKcaWZ+gfa7plk
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="149" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt1L0NgkAAhuFjATvdQZ1DHEEtdQV1ARZQ488a/gzDFlrYaeVHaCi4A5IjRHif5EsI4ZIr3mAMAKCKj/Zt+hJolX5gzCBo+haoQ9z0BdAaQ/0jRtpbz2P+F8iYqYe5tihYnlDvp1qPppCxVg8bbVswoKydetlrh4IBAAAAgC+RZaHjzMRxLqrzsvgLti5W2inn+6O2dJyjKdi6eGo37WzStpKWLtpVeznO0RRcbSS7m7StpKVHie9pCmUaqTp0G03BN5qCbzQF32gKvtEUfKMpoBt+LAGErA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="149" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAHg3OjQAAQ==
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="105" x="0" y="192" width="256" height="208"/>
+  <object id="106" name="hint Hold space to grab onto the vine. " x="336" y="192" width="192" height="208"/>
+  <object id="108" x="672" y="192" width="192" height="208"/>
+  <object id="112" x="960" y="192" width="160" height="208"/>
+  <object id="116" name="plat" x="1088" y="112">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="117" name="plat" x="1008" y="160">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="118" x="1312" y="192" width="1305" height="208"/>
+  <object id="119" x="1406" y="-1">
+   <polyline points="0,0 98.5,47.5 128,95.5 145,66 176,49.5 176.5,0"/>
+  </object>
+  <object id="120" x="1936" y="144" width="48" height="48"/>
+  <object id="121" x="1744" y="128" width="48" height="64"/>
+  <object id="123" x="2048" y="96" width="48" height="32"/>
+  <object id="125" x="2192" y="112" width="48" height="80"/>
+  <object id="126" x="2240" y="112" width="160" height="16"/>
+  <object id="145" x="1712" y="160" width="32" height="32"/>
+  <object id="152" x="862.25" y="240.5">
+   <polyline points="0,0 49,25.25 103.75,-2.75 103.75,46.5 -2.25,47.25 0,1"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Entities">
+  <object id="104" name="vine" x="588.333" y="43.3333">
+   <polyline points="0,0 1.33333,99.3333"/>
+  </object>
+  <object id="115" name="block" x="784" y="128" width="48" height="48"/>
+  <object id="135" name="hint Hello there! Press A/D to move. " x="32" y="-44.6667" width="112" height="236.667"/>
+  <object id="136" name="hint Try hitting SPACE." x="192" y="-37.3333" width="64" height="229.333"/>
+  <object id="138" name="hint Hold space to grab the vine." x="424.667" y="115.333" width="82.6667" height="72.6667"/>
+  <object id="139" name="hint Use A/D to swing." x="549.667" y="-12.333" width="86.6667" height="260.333"/>
+  <object id="140" name="hint Some rocks are moveable." x="672" y="112" width="96" height="80"/>
+  <object id="141" name="hint Press I to change characters." x="960" y="112" width="80" height="80"/>
+  <object id="142" name="hint Hold space to glide." x="1072" y="-50" width="203.333" height="242"/>
+  <object id="143" name="hint Press I to change characters." x="1398" y="110" width="190" height="80"/>
+  <object id="147" name="hint J to to shoot fireballs." x="1664" y="96" width="160" height="96"/>
+  <object id="150" name="hint Thanks for playing!" x="2192" y="32" width="192" height="80"/>
+  <object id="153" name="coin" x="232" y="133"/>
+  <object id="155" name="coin" x="389" y="160"/>
+  <object id="156" name="coin" x="724" y="163"/>
+  <object id="157" name="coin" x="1043" y="135"/>
+  <object id="158" name="coin" x="1119" y="91"/>
+  <object id="159" name="coin" x="1546" y="162"/>
+  <object id="160" name="coin" x="1872" y="171"/>
+  <object id="161" name="coin" x="2081" y="77"/>
+  <object id="162" name="coin" x="2324" y="90"/>
+ </objectgroup>
+</map>

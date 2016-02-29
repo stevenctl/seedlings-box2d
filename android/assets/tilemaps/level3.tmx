@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="130" height="40" tilewidth="16" tileheight="16" nextobjectid="278">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420">
+  <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="130" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2MFNw0AQheEhnAFRAHAG+oA+QgekAKQUAAUgCoAGqAAayJFbekDcIjaSLUVWrMxM1p6183/SO0SylV3NeLyJCAAAAAAAAAAAAAAAAAAAAAAAZVhWwWFbVcFhm1fB+Fjm/JDnwW/0AgpnqatnHpwar+/CugfOj6JXUbY3xTX1+bCeB0vRnxlv/EvLhh7Yba5IXf/m55Xi3rv+toI9aPpgn0z728rgrcfWJOXYcM97ykeGWGqqnQGbKeF8MBQXKZcpV4Z7vlK+M6TreRB9PvgJ/n6LE7E/O2fSfQ1zJHoe/AV/v8W12J+dW+m/pp73QvQ8GBLPPLiX+Gddk+bvhceWzAx7HytPHzxIfI01mTbW/dySF8PeNSZbUjrPe+FJ8tSpb23riD5HlMAzD15lXH3AOcI3Dz5lXH3A/46+PlhInj74B6hc9ag=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="130" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmstS1EAUhpNxrQtYi2tnAU/BLGAlF/dahbIRhD2UDrrg5hN4xfdA4DFUWCGPAFv+LqbLrtDpnFQm3Z3k/6r+6qnUmU6nzulLzkmSEEIIIePlGroJPQgSnIk0SSbT0KMgoZlGDMwwDjrPHGJgnnHQebgvEAX3BaLgvkAU3BeIgvsCUbj2BXW5l9EDbyMjPnHFwWNoKqMn3kZGfKLzyjuIhQ/QRyMmLqF/GV0FGCOpH3VO/IP2G9rv0A+eFTrDO/j6PTRM786JrDN1k8/w/RfoK/Q7Yf6AuM8HpDvwfNBdeD4gCp4P2oct5+fKAWbtX+HC67S4D9/5xCPop6d7tQFbzs+VA5TYS/uqk2Pol6d7tYGH0LBAj0raS/uqE34/Ww6JX/uG/VOBfUxxcAKdjnTm6d5NROLXgWE/K7CPIQ70++xf6HykC0/3biISv7407F8I7GOIA+4L5ZD4dduw3xLYxxAH/E6qHLbasKtWLLGX9jVuzPxWU+PgGca8AC1CS452GXrewOfzgZnfatq+oPMyb/BjDVqH3jraDWiTcVCIXg+aUv/SeZldjHMP2ocOHO0h9CnyZ4oBtR7EWv/Sc9/Mrer3d1/np64wEUH9y+ZvhZ77Zm5Vv7/3EzJOfJ8PbD63+Vthm/sh14NeAPmqM9X5viD1eZ5vbXM/ZBxUqRfFWmdSPlpJ/9dBVy210DKxWMXneb61XQ+5L1TJB8WaRypbP5X2V+Rzmx/zfBvbetDGOJDUS8rMOek853pQTnU/p6ReMsj9932k87zqehAyDm4BcKf+mg==
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="130" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0rlNQ1EQhtHrBgigC5CgDEtQAFuMIWcrg60DUwab7SbAbD1AQMwvkSGk58jX5p0jfYFfNNczpQAAAAAAAAAAAAAAAEyun65rD0EVN+k23aX79FB3HCp5TE9pnJ7TSxqkYRrVG2umLHdKWenUnmJ6vsrPHbymt/Red5yZ8JE+U7dFd7CYty616L2TWmjZf7Ka96617M3/0WZ2uJW2G9pJu3/sez3fNtzB3DvMDo/ScUMn6fTXvvfyu5f204FbmGtn2d95umjoMl3ZNQAAADAl38wcJcM=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="130" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1MEJwzAMQFF5gWSPdo9ktUDnS7pHu0AMdqALBBn6HnwwPukgtEXEJkm1lxTAKPbsAUhnBwAAAAAAAAAAABjRo0Q8a0d9v7OHIc1Sd+ATrW//O37if0ylNfe7cO3FWpIHI811H+wAAAAAAABwlxONed62
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="204" x="560" y="672" width="288" height="32"/>
+  <object id="210" x="208" y="368" width="272" height="112"/>
+  <object id="211" x="-128" y="576" width="688" height="64"/>
+  <object id="212" x="-176" y="0" width="112" height="864"/>
+  <object id="216" x="360" y="-122" width="96" height="32"/>
+  <object id="217" name="plat" x="224" y="336">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="218" name="plat" x="304" y="304">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="219" name="plat" x="224" y="272">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="220" name="plat" x="304" y="240">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="222" name="plat" x="176" y="544">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="223" name="plat" x="176" y="496">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="224" name="plat" x="176" y="448">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="225" name="plat" x="176" y="416">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="226" name="plat" x="176" y="384">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="228" x="16" y="368" width="160" height="112"/>
+  <object id="230" x="356" y="-156" width="96" height="32"/>
+  <object id="238" name="plat" x="912" y="512">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="239" name="plat" x="832" y="480">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="240" name="plat" x="912" y="416">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="246" x="848" y="592" width="160" height="48"/>
+  <object id="248" x="1008" y="656" width="160" height="32"/>
+  <object id="251" x="1168" y="592" width="48" height="64"/>
+  <object id="252" x="1248" y="576" width="48" height="80"/>
+  <object id="253" x="1328" y="560" width="48" height="80"/>
+  <object id="254" x="1408" y="544" width="48" height="112"/>
+  <object id="255" x="1504" y="528" width="48" height="128"/>
+  <object id="256" x="1584" y="496" width="48" height="176"/>
+  <object id="257" x="1792" y="496" width="448" height="144"/>
+  <object id="259" x="1632" y="496" width="160" height="16"/>
+  <object id="266" x="384" y="208" width="96" height="32"/>
+  <object id="272" name="coin" x="250" y="318"/>
+  <object id="273" name="coin" x="335" y="287"/>
+  <object id="274" name="coin" x="249" y="255"/>
+  <object id="275" name="coin" x="335" y="222"/>
+  <object id="276" name="coin" x="949" y="393"/>
+  <object id="277" name="coin" x="1444" y="519"/>
+ </objectgroup>
+ <objectgroup name="Entities">
+  <object id="205" name="block" x="224" y="496" width="64" height="64"/>
+  <object id="213" name="block" x="432" y="144" width="48" height="48"/>
+  <object id="233" name="block" x="352" y="496" width="96" height="48"/>
+  <object id="237" name="block" x="954" y="530.667" width="48" height="48"/>
+  <object id="269" name="block" x="965.333" y="458.667" width="32" height="32"/>
+ </objectgroup>
+</map>

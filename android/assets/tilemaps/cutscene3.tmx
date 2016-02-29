@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="276">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420">
+  <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmNsNwjAMRZMVYA/YA+bgMQdrARKwBG8+GAL+EBfBB4rixnmQuChXuqpkOc1pWieVlUqjjlaqq90xUzf4noihST1w9LU7Zop6htTcA8wx1O6YKeoZOGufg49aJ87a+yg1H2esjypfnEL5qDqQwkfVgRQ+KkcKn8/9YiSdz/Ydcc6okvXL4StZv5wztGT9cs7QXPXrMzcnRwpfru/PJknnh03/8H5/MTbHHJVP1v+pTXV/iVMb9pcNI6ck3wXXFbxWdtZvjjm8gJcZ+Y64nuCzerM2aQvv4D18UGn5bPtEzP9z6v5QaH+NykndHwrtr1E5UvpDOep3hPuM4Qk81XSMM86MS9fV4dJ6OPzS7OOq9ukJRhdvmQ==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0LEJgDAYBeEguIbgiuIEDiCC4BqCIzlI8BohxV8IBtLcB9c/XkqSJEmSJEmSpL92uoN66mimqXJfdx10Ug4aaaCN1spFf5S9uy5aGhT9UdZql9XpAW8Wedc=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztlsFNAzEQRe0Gcgh3JK45LF2AtNQBoQ4KQEhItIFEA0AdwIUS9pDcEH+VjBgtjnY88f74kJGerI3kzLfn254QysQKrNXYxzyGcBLH5+k5U4Vo0ZoajOcj+ubRto59Q7RoTS3Gq5G8TbStY98QLVqTpW5ttK2jlD6P/5j6PP5j6sv1H3v/cv3H3r9c/zVkfbn+Y5/fXP+x6it1zfUfq76p983iP1Z9U+9bjfefzmV9fxn9S+p+sb6/jP7F6z9W/5LyX439i85V0/kVLTpXTe+HaMk9v8f67tZXU32993Pt9e3C3z3UDSitr1M6h7lS9LFQd/qU+uQ/W6M2jfiUsX89r+ANvBv17drz0vrEfx/4/gRfYfPbBZhtfTiL/9H6LmN5bUN93vOr1zBVeHo5xv0i4enlGP2fhKeXY/R/Ep5asep7jRw3YAlujfk8c4bxCJ7AM/hJcAZOwQO4L8z3CKLrBdwdgNR+aA6l60gZfgHvufyR
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0dsJwzAQRNHdBlSI3Meq/58UkjQQDF40XpKvKIaQe0DIT81YNgMAAAAA4Ld1N9t8Hud5zrcv5e3r5tBrNT989rq/uD98bbc4cvYRkl8z45i38k4vzz0Wd+uSNWRvNDO7Zsfxpl/Iv/9U87lfmlf3sUs3Hdov18h5pVyz+fnYbO5pzdU+Ub7zSu3iPADAf3sCPbsnnA==
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="271" x="192" y="562" width="448" height="78"/>
+  <object id="272" x="16" y="-154" width="128" height="48"/>
+  <object id="273" name="slope" x="128" y="592">
+   <polyline points="0,0 64,-32"/>
+  </object>
+  <object id="275" x="0" y="592" width="128" height="48"/>
+ </objectgroup>
+ <objectgroup name="Entities"/>
+</map>

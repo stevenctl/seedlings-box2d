@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="271">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420">
+  <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <layer name="Tile Layer 4" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1bsNgDAMBFB+omQDPqJkAxZgEAahYFTYAwhdaBIJ+yIXd9JJKZ+cWMkyhmEYhmGYb4pAa+9cuR6RngBfF+jonQfXK9Ib4NsVOxn3LcZ9bW7X1zvbbND3ugrXEmDT8CHuVMuHulMtH3p2Uh96dhJfitn99aV4dxJfk4b224f4ZzV9iH9W07ca923GfdwPmY/7IfNxP2Q+7ofMl3I/HjDUz5Q=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <objectgroup name="Collisions">
+  <object id="270" x="0" y="224" width="320" height="48"/>
+ </objectgroup>
+ <objectgroup name="Entities"/>
+</map>
