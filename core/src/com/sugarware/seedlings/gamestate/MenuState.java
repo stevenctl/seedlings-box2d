@@ -23,10 +23,10 @@ public class MenuState extends GameState {
 		super(gsm2);
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("Monopol.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
-		parameter.size = 72;
+		parameter.size = (int) (.2f * Gdx.graphics.getHeight());
 		parameter.color = Color.WHITE;
 		this.font = generator.generateFont(parameter);
-		parameter.size = 40;
+		parameter.size =  (int) (.1f * Gdx.graphics.getHeight());
 		this.font2 = generator.generateFont(parameter);
 		generator.dispose();
 		this.g = new SpriteBatch();
