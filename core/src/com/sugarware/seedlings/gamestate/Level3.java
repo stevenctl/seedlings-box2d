@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0_110.
- */
 package com.sugarware.seedlings.gamestate;
 
 import java.util.ArrayList;
@@ -12,85 +9,83 @@ import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
 import com.sugarware.seedlings.entities.Water;
 
-public class Level3
-extends PlayGameState {
-    float shift = -50.0f;
+public class Level3 extends PlayGameState {
 
-    public Level3(GameStateManager gsm) {
-        super(gsm, "tilemaps/level3.tmx");
-        ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
-        int i = 0;
-        while (i < 1) {
-            icons.add(GameStateManager.rm.icons.get(i));
-            ++i;
-        }
-        this.ss = new ScrollSelector(icons, 2.0f, 1.5f, 1.5f, this);
-    }
+	public Level3(GameStateManager gsm) {
+		super(gsm, "tilemaps/level3.tmx");
+		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
+		int i = 0;
+		while (i < 1) {
+			icons.add(GameStateManager.rm.icons.get(i));
+			++i;
+		}
+		this.ss = new ScrollSelector(icons, 2.0f, 1.5f, 1.5f, this);
+	}
 
-    @Override
-    public void init() {
-        super.init();
-        this.p = new VanillaCharacter(this,  3.0f, 22.01f);
-        for(float i = -1; i + 6 <= w / 16f; i+=6)getEntities().add(new Water(this,i, 0,6, 0.5f));
-        this.gsm.setNextState(5);
-        this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
-    }
+	@Override
+	public void init() {
+		super.init();
+		this.p = new VanillaCharacter(this, 3.0f, 22.01f);
+		for (float i = -1; i + 6 <= w / 16f; i += 6)
+			getEntities().add(new Water(this, i, 0, 6, 0.5f));
+		this.gsm.setNextState(5);
+		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
+	}
 
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
+	@Override
+	public void dispose() {
+		super.dispose();
+	}
 
-    @Override
-    public void cursorMoved(Vector3 coords, int pointer) {
-    }
+	@Override
+	public void cursorMoved(Vector3 coords, int pointer) {
+	}
 
-    @Override
-    public void touchDown(Vector3 coords, int pointer) {
-    }
+	@Override
+	public void touchDown(Vector3 coords, int pointer) {
+	}
 
-    @Override
-    public void touchUp(Vector3 coords, int pointer) {
-    }
+	@Override
+	public void touchUp(Vector3 coords, int pointer) {
+	}
 
-    @Override
-    public void keyPressed(int k) {
-        super.keyPressed(k);
-        this.p.keyDown(k);
-        if (k == 37) {
-            this.ss.scroll();
-        }
-    }
+	@Override
+	public void keyPressed(int k) {
+		super.keyPressed(k);
+		this.p.keyDown(k);
+		if (k == 37) {
+			this.ss.scroll();
+		}
+	}
 
-    @Override
-    public void keyReleased(int k) {
-        this.p.keyUp(k);
-    }
+	@Override
+	public void keyReleased(int k) {
+		this.p.keyUp(k);
+	}
 
-    @Override
-    public void gatherResources() {
-        GameStateManager.rm.loadWaterImages();
-        GameStateManager.rm.loadImages(0);
-        GameStateManager.rm.loadImages(1);
-        GameStateManager.rm.loadImages(8);
-        GameStateManager.rm.loadImages(6);
-        GameStateManager.rm.loadSoundPack(Resources.Sounds.GENERAL);
-    }
+	@Override
+	public void gatherResources() {
+		GameStateManager.rm.loadWaterImages();
+		GameStateManager.rm.loadImages(0);
+		GameStateManager.rm.loadImages(1);
+		GameStateManager.rm.loadImages(8);
+		GameStateManager.rm.loadImages(6);
+		GameStateManager.rm.loadSoundPack(Resources.Sounds.GENERAL);
+	}
 
-    @Override
-    public void update() {
-        super.update();
-        if (this.p.body.getPosition().x > (float)(this.w / 16)) {
-            this.gsm.nextState();
-        }
-        if (this.p.body.getPosition().y < -0.4f) {
-            this.init();
-        }
-    }
+	@Override
+	public void update() {
+		super.update();
+		if (this.p.body.getPosition().x > (float) (this.w / 16)) {
+			this.gsm.nextState();
+		}
+		if (this.p.body.getPosition().y < -0.4f) {
+			this.init();
+		}
+	}
 
-    @Override
-    public void draw() {
-        super.draw();
-    }
+	@Override
+	public void draw() {
+		super.draw();
+	}
 }
-

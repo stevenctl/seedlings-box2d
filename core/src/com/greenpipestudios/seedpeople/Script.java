@@ -1,6 +1,4 @@
-/*
- * Decompiled with CFR 0_110.
- */
+
 package com.greenpipestudios.seedpeople;
 
 import java.io.Serializable;

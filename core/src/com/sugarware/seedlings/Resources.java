@@ -1,8 +1,9 @@
-/*
- * Decompiled with CFR 0_110.
- */
 package com.sugarware.seedlings;
 
+/**
+ * Stores indexes for grabbing resources in a nice organized format. 
+ * 
+ */
 public class Resources {
 
     public static class CharacterIcons {
@@ -60,4 +61,5 @@ public class Resources {
     }
 
 }
+
 

@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0_110.
- */
 package com.sugarware.seedlings;
 
-import com.badlogic.gdx.graphics.OrthographicCamera;
+import java.util.ArrayList;
+
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
 import com.sugarware.seedlings.gamestate.GameState;
-import java.io.PrintStream;
-import java.util.ArrayList;
 
+/**
+ * Wheel that appears in top right corner for selecting character. 
+ *
+ */
 public class ScrollSelector {
     public float theta;
     float startangle;
@@ -96,4 +96,5 @@ public class ScrollSelector {
         }
     }
 }
+
 

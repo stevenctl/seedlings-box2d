@@ -1,18 +1,13 @@
-/*
- * Decompiled with CFR 0_110.
- */
+
 package com.sugarware.seedlings;
 
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
+import java.util.ArrayList;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import java.io.PrintStream;
-import java.util.ArrayList;
 
 public class ResourceManager {
     float volAdj;
@@ -71,9 +66,9 @@ public class ResourceManager {
     public ResourceManager() {
         System.out.println("Resource Manager Initialized");
         this.loadbg = new TextureRegion(new Texture(Gdx.files.internal("loadbg.jpg")));
-        this.soundpacks = new ArrayList();
-        this.sndPaths = new ArrayList();
-        this.sngPaths = new ArrayList();
+        this.soundpacks = new ArrayList<ArrayList<Sound>>();
+        this.sndPaths = new ArrayList<ArrayList<String>>();
+        this.sngPaths = new ArrayList<String>();
         this.soundpacks.add(null);
         ArrayList<String> sp = new ArrayList<String>();
         sp.add("sounds/whoosh.wav");
@@ -89,10 +84,10 @@ public class ResourceManager {
         this.sngPaths.add("songs/funkymeadow.mp3");
         this.sngPaths.add("songs/meadow2.ogg");
         this.sngPaths.add("songs/periwinkle.mp3");
-        this.images = new ArrayList();
-        this.imgpaths = new ArrayList();
-        this.frameCounts = new ArrayList();
-        this.dimensions = new ArrayList();
+        this.images = new ArrayList<ArrayList<TextureRegion[]>>();
+        this.imgpaths = new ArrayList<String>();
+        this.frameCounts = new ArrayList<int[]>();
+        this.dimensions = new ArrayList<int[]>();
         this.frameCounts.add(new int[]{1, 16, 5, 1, 2});
         this.dimensions.add(new int[]{64, 64});
         this.imgpaths.add("sprites/vanilla_seed.png");
@@ -349,7 +344,7 @@ public class ResourceManager {
 
     public void loadIcons() {
         if (this.icons == null) {
-            this.icons = new ArrayList();
+            this.icons = new ArrayList<TextureRegion>();
         } else {
             this.icons.clear();
         }
