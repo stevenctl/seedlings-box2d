@@ -23,13 +23,13 @@ It takes about a minute or two to complete and is there to showcase the main fea
 
 # Controls
 ## PC/Mac
-WASD - move
-I - Change char
-Space - Jump/Glide/Hang on Vine
-J - Action
+WASD - move<br>
+I - Change char<br>
+Space - Jump/Glide/Hang on Vine<br>
+J - Action<br>
 ## Android
-left side of screen - move
-right side - jump
+left side of screen - move<br>
+right side - jump<br>
 
 <br>
 NOTE:
