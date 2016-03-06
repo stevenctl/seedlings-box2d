@@ -4,7 +4,7 @@ Seedlings is a game I (Steven Landow), and Trent Brew created this fall. We want
 
 We haven'thad much time to work on it yet, but with our high-school sports ending we should have a bit more time to make this thing awesome!
 
-#Story Mode 
+# Story Mode 
 The story will tell the tale of the Seedlings, natural beings who live everywhere in nature; forests, caves, volcanoes, tundras, etc. 
 An evil corporation made headed by a selfish CEO who controls his Robot minions wants to tear down their home to make way for more department stores, resorts, and other frivolous things.
 The gentle Seedlings will have to team up to save their home!
@@ -21,18 +21,16 @@ It takes about a minute or two to complete and is there to showcase the main fea
 * Lighting Shaders
 * Enemies
 
-#Controls
-PC/Mac
-
+# Controls
+## PC/Mac
 WASD - move
 I - Change char
 Space - Jump/Glide/Hang on Vine
 J - Action
-
-Android:
+## Android
 left side of screen - move
 right side - jump
 
-
+<br>
 NOTE:
 Some of the art and music is _NOT_ ours! We don't want to steal it, either. We are in the process of tracking down the source of this material and either removing it from the game or buying a licence to use it and crediting you. 
