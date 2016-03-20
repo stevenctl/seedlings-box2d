@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0_110.
- */
 package com.sugarware.seedlings.desktop;
 
 import java.awt.image.BufferedImage;

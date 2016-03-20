@@ -2,6 +2,7 @@ package com.sugarware.seedlings.gamestate;
 
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -21,7 +22,7 @@ public class MenuState extends GameState {
 
 	public MenuState(GameStateManager gsm2) {
 		super(gsm2);
-		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("Monopol.ttf"));
+		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("moment.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
 		parameter.size = (int) (.2f * Gdx.graphics.getHeight());
 		parameter.color = Color.WHITE;
@@ -44,18 +45,18 @@ public class MenuState extends GameState {
 		this.cam.update();
 		this.g.setProjectionMatrix(this.cam.combined);
 		this.g.begin();
-		this.g.draw(this.bg, 0, 0, Gdx.graphics.getWidth(),
-				(Gdx.graphics.getWidth() / (float) bg.getRegionWidth()) * Gdx.graphics.getHeight());
+		this.g.draw(this.bg, 0, 0 , Gdx.graphics.getWidth(),
+				(Gdx.graphics.getHeight() / (float) Gdx.graphics.getWidth()) * Gdx.graphics.getWidth());
 		this.font.draw(this.g, "Seedlings", 0.0f, (float) Gdx.graphics.getHeight() - 25.0f, 0, "Seedlings".length(),
 				Gdx.graphics.getWidth(), 1, true, "...");
 		int i = 0;
 		while (i < this.options.length) {
-			if (i == this.sel) {
+			if (i == this.sel || (Gdx.app.getType() == ApplicationType.Android ||Gdx.app.getType() == ApplicationType.iOS)) {
 				this.font2.setColor(Color.WHITE);
 			} else {
 				this.font2.setColor(Color.LIGHT_GRAY);
 			}
-			this.font2.draw(this.g, this.options[i], 0.0f, (float) Gdx.graphics.getHeight() - 40.0f * (float) (i + 4),
+			this.font2.draw(this.g, this.options[i], 0.0f, (float) Gdx.graphics.getHeight() - font2.getLineHeight() * (float) (i + 4),
 					0, this.options[i].length(), Gdx.graphics.getWidth(), 1, true, "...");
 			++i;
 		}
@@ -101,6 +102,7 @@ public class MenuState extends GameState {
 	public void dispose() {
 		this.g.dispose();
 		this.font.dispose();
+		font2.dispose();
 		this.bg.getTexture().dispose();
 	}
 
@@ -108,8 +110,8 @@ public class MenuState extends GameState {
 	public void cursorMoved(Vector3 coords, int pointer) {
 		int i = 0;
 		while (i < this.options.length) {
-			if (coords.y > (float) Gdx.graphics.getHeight() - 40.0f * (float) (i + 5)
-					&& coords.y < (float) Gdx.graphics.getHeight() - 40.0f * (float) (i + 5)
+			if (coords.y > (float) Gdx.graphics.getHeight() - font2.getLineHeight() * (float) (i + 5)
+					&& coords.y < (float) Gdx.graphics.getHeight() -font2.getLineHeight() * (float) (i + 5)
 							+ this.font2.getLineHeight()) {
 				this.sel = i;
 				break;
@@ -120,10 +122,11 @@ public class MenuState extends GameState {
 
 	@Override
 	public void touchDown(Vector3 coords, int pointer) {
+		if(Gdx.app.getType() == ApplicationType.Android ||Gdx.app.getType() == ApplicationType.iOS)return;
 		int i = 0;
 		while (i < this.options.length) {
-			if (coords.y > (float) Gdx.graphics.getHeight() - 40.0f * (float) (i + 5)
-					&& coords.y < (float) Gdx.graphics.getHeight() - 40.0f * (float) (i + 5)
+			if (coords.y > (float) Gdx.graphics.getHeight() - font2.getLineHeight() * (float) (i + 5)
+					&& coords.y < (float) Gdx.graphics.getHeight() - font2.getLineHeight()* (float) (i + 5)
 							+ this.font2.getLineHeight()) {
 				this.sel = i;
 				break;
@@ -135,6 +138,17 @@ public class MenuState extends GameState {
 
 	@Override
 	public void touchUp(Vector3 coords, int pointer) {
+		int i = 0;
+		while (i < this.options.length) {
+			if (coords.y > (float) Gdx.graphics.getHeight() - font2.getLineHeight() * (float) (i + 5)
+					&& coords.y < (float) Gdx.graphics.getHeight() - font2.getLineHeight()* (float) (i + 5)
+							+ this.font2.getLineHeight()) {
+				this.sel = i;
+				break;
+			}
+			++i;
+		}
+		this.select();
 	}
 
 	@Override

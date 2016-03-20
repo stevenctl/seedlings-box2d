@@ -130,6 +130,7 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		mouseMoved(screenX,screenY);
 		return false;
 	}
 

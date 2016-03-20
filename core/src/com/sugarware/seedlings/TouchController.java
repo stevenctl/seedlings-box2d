@@ -22,7 +22,7 @@ public class TouchController implements InputProcessor {
 	TextureRegion btnLight;
 	private boolean VU;
 	private boolean VD;
-
+	public static boolean inMenu = false;
 	public TouchController(GdxGame game) {
 		System.out.println("Touch Controller Initialized");
 		this.h = new SpriteBatch();
@@ -35,6 +35,7 @@ public class TouchController implements InputProcessor {
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int p, int button) {
+		game.touchDown(screenX, screenY, p, button);
 		this.coords.set(screenX, screenY, 0.0f);
 		int x = (int) this.coords.x;
 		int y = Gdx.graphics.getHeight() - (int) this.coords.y;
@@ -86,6 +87,7 @@ public class TouchController implements InputProcessor {
 
 	@Override
 	public boolean touchDragged(int x, int y, int p) {
+		game.touchDragged(x, y, p);
 		y = Gdx.graphics.getHeight() - y;
 		switch (this.scheme) {
 		case 0: {

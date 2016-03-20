@@ -55,11 +55,12 @@ public class Hint extends Entity {
 	public void draw(SpriteBatch g) {
 		if (this.shouldShow()) {
 			if (font == null) {
-				FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("Monopol.ttf"));
+				FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("moment.ttf"));
 				FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
 				parameter.size = 32;
 				parameter.color = Color.WHITE;
 				font = generator.generateFont(parameter);
+				
 			}
 			if (this.oldpos == null) {
 				this.oldpos = new Vector2();
