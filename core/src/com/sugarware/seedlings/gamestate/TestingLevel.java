@@ -116,7 +116,8 @@ public class TestingLevel extends PlayGameState {
 		}
 		targetlight = p.body.getPosition().x > 96.0f ? 0.1f : 0.8f;
 		if (p.body.getPosition().x > (float) (w / 16)) {
-			gsm.setState(0);
+			gsm.setState(GameStateManager.MM);
+			return;
 		}
 		if (p.body.getPosition().y < -5.0f) {
 			init();

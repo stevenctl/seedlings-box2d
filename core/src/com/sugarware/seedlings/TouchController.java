@@ -198,7 +198,7 @@ public class TouchController implements InputProcessor {
 		}
 		}
 		if (this.VU && this.VD) {
-			this.game.gsm.setState(99);
+			this.game.gsm.setState(GameStateManager.TEST);
 			this.VD = false;
 			this.VU = false;
 		}

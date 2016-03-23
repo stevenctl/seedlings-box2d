@@ -40,7 +40,7 @@ public class Explosion extends Entity implements Luminous {
 
 	@Override
 	public void destroy() {
-		this.gs.getWorld().destroyBody(this.body);
+		if(this.body != null)this.gs.getWorld().destroyBody(this.body);
 		if (this.light != null) {
 			this.light.remove();
 		}

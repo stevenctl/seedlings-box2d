@@ -74,6 +74,7 @@ public class Cutscene2 extends PlaybackState {
 		super.update();
 		if (this.p.body.getPosition().x > (float) (this.w / 16 + 5)) {
 			this.gsm.nextState();
+			return;
 		}
 	}
 

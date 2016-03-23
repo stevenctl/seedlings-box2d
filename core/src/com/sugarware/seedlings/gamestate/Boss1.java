@@ -94,6 +94,7 @@ public class Boss1 extends PlayGameState {
 		}
 		if (this.p.body.getPosition().x > (float) (this.w / 16)) {
 			this.gsm.nextState();
+			return;
 		}
 
 	}

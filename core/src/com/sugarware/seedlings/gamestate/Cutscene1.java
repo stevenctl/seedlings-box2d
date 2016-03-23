@@ -192,6 +192,7 @@ public class Cutscene1 extends PlaybackState {
 						continue;
 					System.out.println("218");
 					this.gsm.nextState();
+					return;
 				}
 			}
 		}

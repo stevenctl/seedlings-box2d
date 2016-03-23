@@ -114,6 +114,7 @@ public class Cutscene3 extends PlaybackState {
 		}
 		if (this.p.body.getPosition().x > (float) (this.w / 16 + 5)) {
 			this.gsm.nextState();
+			return;
 		}
 	}
 

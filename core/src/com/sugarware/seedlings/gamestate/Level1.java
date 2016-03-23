@@ -78,6 +78,7 @@ public class Level1 extends PlayGameState {
 		super.update();
 		if (this.p.body.getPosition().x > (float) (this.w / 16)) {
 			this.gsm.nextState();
+			return;
 		}
 		if (this.p.body.getPosition().y < -5.0f) {
 			this.init();
