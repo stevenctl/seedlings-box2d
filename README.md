@@ -4,6 +4,9 @@ Seedlings is a game I (Steven Landow), and Trent Brew created this fall. We want
 
 We haven'thad much time to work on it yet, but with our high-school sports ending we should have a bit more time to make this thing awesome!
 
+## Download
+https://drive.google.com/file/d/0B7Bh26f2woWxU0VOaEZtWE9iRUU/view?usp=sharing
+
 # Story Mode 
 The story will tell the tale of the Seedlings, natural beings who live everywhere in nature; forests, caves, volcanoes, tundras, etc. 
 An evil corporation made headed by a selfish CEO who controls his Robot minions wants to tear down their home to make way for more department stores, resorts, and other frivolous things.
