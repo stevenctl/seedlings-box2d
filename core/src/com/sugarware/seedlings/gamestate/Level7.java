@@ -9,10 +9,10 @@ import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
 import com.sugarware.seedlings.entities.Water;
 
-public class Level4 extends PlayGameState {
+public class Level7 extends PlayGameState {
 	float shift = -50.0f;
 
-	public Level4(GameStateManager gsm) {
+	public Level7(GameStateManager gsm) {
 		super(gsm, "tilemaps/level4.tmx");
 		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
 		int i = 0;
@@ -26,10 +26,10 @@ public class Level4 extends PlayGameState {
 	@Override
 	public void init() {
 		super.init();
-		this.p = new VanillaCharacter(this, 3.0f, 62.01f);
-		this.gsm.setNextState(GameStateManager.MM);
-//		entities.add(new Water(this, 0.0f, 29.0f, 258 / this.ppt, 3.0f));
-//		entities.add(new Water(this, 0.0f, 0.0f, (this.w + 32) / this.ppt, 245 / this.ppt));
+		this.p = new VanillaCharacter(this, 3.0f, 31.01f);
+		this.gsm.setNextState(5);
+		entities.add(new Water(this, 0.0f, 29.0f, 258 / this.ppt, 3.0f));
+		entities.add(new Water(this, 0.0f, 0.0f, (this.w + 32) / this.ppt, 245 / this.ppt));
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 

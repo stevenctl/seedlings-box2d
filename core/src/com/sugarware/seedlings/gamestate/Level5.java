@@ -9,11 +9,11 @@ import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
 import com.sugarware.seedlings.entities.Water;
 
-public class Level4 extends PlayGameState {
+public class Level5 extends PlayGameState {
 	float shift = -50.0f;
 
-	public Level4(GameStateManager gsm) {
-		super(gsm, "tilemaps/level4.tmx");
+	public Level5(GameStateManager gsm) {
+		super(gsm, "tilemaps/level5.tmx");
 		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
 		int i = 0;
 		while (i < 2) {
