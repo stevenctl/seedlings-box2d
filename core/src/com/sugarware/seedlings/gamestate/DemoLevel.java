@@ -12,14 +12,14 @@ import com.sugarware.seedlings.entities.Robot;
 import com.sugarware.seedlings.entities.VanillaCharacter;
 import com.sugarware.seedlings.entities.Water;
 
-public class TestingLevel extends PlayGameState {
+public class DemoLevel extends PlayGameState {
 	Vector2 spawn = new Vector2(4.0f, 11.0f);
 	float targetlight = 0.8f;
 	float light = 0.8f;
 	float shift = -50.0f;
 
-	public TestingLevel(GameStateManager gsm) {
-		super(gsm, "tilemaps/test.tmx");
+	public DemoLevel(GameStateManager gsm) {
+		super(gsm, "tilemaps/demo.tmx");
 		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
 		int i = 0;
 		while (i < 1) {
