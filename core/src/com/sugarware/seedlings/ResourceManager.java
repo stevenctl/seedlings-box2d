@@ -92,7 +92,7 @@ public class ResourceManager {
         this.dimensions.add(new int[]{64, 64});
         this.imgpaths.add("sprites/vanilla_seed.png");
         this.images.add(null);
-        this.frameCounts.add(new int[]{1, 16, 5, 1, 4});
+        this.frameCounts.add(new int[]{1, 16, 5, 1, 4,2});
         this.dimensions.add(new int[]{64, 64});
         this.imgpaths.add("sprites/flower_seed.png");
         this.images.add(null);

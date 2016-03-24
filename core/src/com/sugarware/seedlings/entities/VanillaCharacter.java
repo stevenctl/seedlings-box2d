@@ -77,9 +77,9 @@ public class VanillaCharacter extends Player {
 				this.animation.setDelay(16);
 			}
 		} else if (this.swingjoint != null) {
-			if (this.currentAction != 4) {
-				this.currentAction = 4;
-				this.animation.setFrames((TextureRegion[]) this.frames.get(4));
+			if (this.currentAction != SWING) {
+				this.currentAction = SWING;
+				this.animation.setFrames((TextureRegion[]) this.frames.get(SWING));
 				this.animation.setDelay(-1);
 			} else if (dx > 0.0f) {
 				this.animation.setFrame(this.facingRight ? 1 : 0);

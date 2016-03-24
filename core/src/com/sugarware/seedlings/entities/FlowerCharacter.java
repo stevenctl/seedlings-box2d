@@ -13,6 +13,7 @@ public class FlowerCharacter extends Player {
 	public static final int JUMP = 2;
 	public static final int FALL = 3;
 	public static final int SLOWFALL = 4;
+	public static final int SWING = 5;
 	boolean FLOAT = false;
 	float floatSpeed = 2.7f;
 
@@ -90,6 +91,16 @@ public class FlowerCharacter extends Player {
 				this.currentAction = 1;
 				this.animation.setFrames((TextureRegion[]) this.frames.get(this.currentAction));
 				this.animation.setDelay(16);
+			}
+		} else if (this.swingjoint != null) {
+			if (this.currentAction != SWING) {
+				this.currentAction = SWING;
+				this.animation.setFrames((TextureRegion[]) this.frames.get(SWING));
+				this.animation.setDelay(-1);
+			} else if (dx > 0.0f) {
+				this.animation.setFrame(this.facingRight ? 1 : 0);
+			} else {
+				this.animation.setFrame(this.facingRight ? 0 : 1);
 			}
 		} else if (this.jumping && dy >= 0.0f) {
 			if (this.currentAction != 2) {
