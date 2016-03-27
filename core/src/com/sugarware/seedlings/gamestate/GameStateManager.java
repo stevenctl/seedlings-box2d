@@ -173,7 +173,7 @@ public class GameStateManager {
 			return new Level4(this);
 		}
 		case 99: {
-			return new Cutscene2(this);
+			return new DemoLevel(this);
 		}
 		}
 		System.err.println("Invalid state index: " + index);

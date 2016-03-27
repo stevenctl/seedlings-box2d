@@ -15,7 +15,6 @@ public class Cutscene2 extends PlaybackState {
 
 	public Cutscene2(GameStateManager gsm) {
 		super(gsm, "tilemaps/cutscene2.tmx", "scripts/cut2.sav");
-		
 		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
 		int i = 0;
 		while (i < 1) {
