@@ -26,8 +26,8 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 	static {
 		c = 0;
 		f = 0;
-		WIDTH = 640;
-		HEIGHT = 420;
+		WIDTH = 960;
+		HEIGHT = 740;
 		test = false;
 	}
 
@@ -43,6 +43,7 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 	public void create() {
 		WIDTH = Gdx.graphics.getWidth();
 		HEIGHT = Gdx.graphics.getHeight();
+		
 		float scale = camZoom / (float) HEIGHT;
 		WIDTH = (int) ((float) WIDTH * scale);
 		HEIGHT = (int) ((float) HEIGHT * scale);

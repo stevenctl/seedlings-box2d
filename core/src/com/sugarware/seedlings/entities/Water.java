@@ -83,7 +83,7 @@ public class Water extends Entity {
 		this.coords = this.gs.cam.project(this.coords);
 		this.scr.setTexture((Texture) this.gs.fbo.getColorBufferTexture());
 		int vshift = (int) (0.13f * (float) Gdx.graphics.getHeight());
-		this.scr.setRegion((int) this.coords.x - Math.round(.03f * (float) Gdx.graphics.getWidth()), (int) this.coords.y + vshift, (int) (this.width * this.scaleX),
+		this.scr.setRegion((int) this.coords.x , (int) this.coords.y + vshift + 8, (int) (this.width * this.scaleX),
 				(int) (this.height * this.scaleY));
 		this.scr.flip(false, true);
 		float toph = (float) GameStateManager.rm.water_top.getRegionHeight() / 16.0f;
@@ -92,7 +92,7 @@ public class Water extends Entity {
 			g.setShader(this.waterShader2);
 			g.begin();
 			g.draw(this.scr, (float) ((int) this.x), (float) ((int) this.y), (float) ((int) this.width),
-					(float) ((int) this.height));
+					(float) ((int) this.height + toph / 2));
 			g.end();
 		}
 		g.setShader(this.waterShader);
