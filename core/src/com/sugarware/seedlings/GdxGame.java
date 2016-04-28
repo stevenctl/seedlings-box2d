@@ -48,7 +48,7 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 		WIDTH = (int) ((float) WIDTH * scale);
 		HEIGHT = (int) ((float) HEIGHT * scale);
 		System.out.println("Cam is " + WIDTH + " x " + HEIGHT + " " + scale);
-		this.gsm = !test ? new GameStateManager(this, 0) : new GameStateManager(this, 99);
+		this.gsm = !test ? new GameStateManager(this, 0) : new GameStateManager(this, GameStateManager.L1);
 		if (Gdx.app.getType() == Application.ApplicationType.Android
 				|| Gdx.app.getType() == Application.ApplicationType.iOS) {
 			this.tc = new TouchController(this);

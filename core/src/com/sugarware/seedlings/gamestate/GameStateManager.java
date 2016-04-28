@@ -65,14 +65,7 @@ public class GameStateManager {
 			this.g = new SpriteBatch();
 		}
 		this.currentState.draw();
-		if (this.currentState instanceof PlayGameState && !((PlayGameState) this.currentState).initialized) {
-			this.g.setProjectionMatrix(this.cam.combined);
-			if (!this.g.isDrawing()) {
-				this.g.begin();
-			}
-			this.g.draw(GameStateManager.rm.loadbg, 0.0f, 0.0f, (float) Gdx.graphics.getWidth(),
-					(float) Gdx.graphics.getHeight());
-		}
+
 		if (this.paused) {
 			this.f.draw((Batch) this.g, "PAUSED", this.currentState.cam.position.x - 10.0f,
 					this.currentState.cam.position.y);
