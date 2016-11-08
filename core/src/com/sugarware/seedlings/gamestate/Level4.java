@@ -28,8 +28,8 @@ public class Level4 extends PlayGameState {
 		super.init();
 		this.p = new VanillaCharacter(this, 3.0f, 62.01f);
 		this.gsm.setNextState(GameStateManager.MM);
-//		entities.add(new Water(this, 0.0f, 29.0f, 258 / this.ppt, 3.0f));
-//		entities.add(new Water(this, 0.0f, 0.0f, (this.w + 32) / this.ppt, 245 / this.ppt));
+		entities.add(new Water(this, 0.0f, 29.0f, 258 / this.ppt, 3.0f));
+		entities.add(new Water(this, 0.0f, 0.0f, (this.w + 32) / this.ppt, 245 / this.ppt));
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 

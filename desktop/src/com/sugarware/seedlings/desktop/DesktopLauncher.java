@@ -9,8 +9,6 @@ import java.nio.ByteBuffer;
 
 import javax.imageio.ImageIO;
 
-import org.lwjgl.opengl.Display;
-
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
@@ -27,6 +25,9 @@ public class DesktopLauncher {
         config.addIcon("icon128.png", FileType.Internal);
         if (arg.length > 0) {
             GdxGame.test = arg[0].equals("test");
+            if(GdxGame.test){
+            	GdxGame.testLevelId = Integer.parseInt(arg[1]);
+            }
         }
         new com.badlogic.gdx.backends.lwjgl.LwjglApplication((ApplicationListener)new GdxGame(), config);
     }

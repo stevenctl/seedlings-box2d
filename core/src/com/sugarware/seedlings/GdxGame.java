@@ -17,10 +17,12 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 	public static int WIDTH;
 	public static int HEIGHT;
 	public static boolean test;
+	public static int testLevelId;
 	public GameStateManager gsm;
 	public TouchController tc;
 	public long st;
 	static GdxGame inst;
+	
 	Vector3 coords;
 
 	static {
@@ -29,6 +31,7 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 		WIDTH = 960;
 		HEIGHT = 740;
 		test = false;
+		testLevelId = -1;
 	}
 
 	public GdxGame() {
@@ -48,7 +51,7 @@ public class GdxGame implements ApplicationListener, InputProcessor {
 		WIDTH = (int) ((float) WIDTH * scale);
 		HEIGHT = (int) ((float) HEIGHT * scale);
 		System.out.println("Cam is " + WIDTH + " x " + HEIGHT + " " + scale);
-		this.gsm = !test ? new GameStateManager(this, 0) : new GameStateManager(this, GameStateManager.L1);
+		this.gsm = !test ? new GameStateManager(this, 0) : new GameStateManager(this, testLevelId);
 		if (Gdx.app.getType() == Application.ApplicationType.Android
 				|| Gdx.app.getType() == Application.ApplicationType.iOS) {
 			this.tc = new TouchController(this);

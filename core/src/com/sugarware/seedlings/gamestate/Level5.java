@@ -7,7 +7,6 @@ import com.badlogic.gdx.math.Vector3;
 import com.sugarware.seedlings.Resources;
 import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
-import com.sugarware.seedlings.entities.Water;
 
 public class Level5 extends PlayGameState {
 	float shift = -50.0f;
