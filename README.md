@@ -34,6 +34,12 @@ J - Action<br>
 left side of screen - move<br>
 right side - jump<br>
 
+## Credits
+Programming - Steven Landow
+Art - Trent Brew
+
+
+
 <br>
 NOTE:
 Some of the art and music is _NOT_ ours! We don't want to steal it, either. We are in the process of tracking down the source of this material and either removing it from the game or buying a licence to use it and crediting you. 
