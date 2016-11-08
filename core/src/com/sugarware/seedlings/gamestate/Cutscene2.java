@@ -15,7 +15,7 @@ public class Cutscene2 extends PlaybackState {
 
 	public Cutscene2(GameStateManager gsm) {
 		super(gsm, "tilemaps/cutscene2.tmx", "scripts/cut2.sav");
-		
+
 		ArrayList<TextureRegion> icons = new ArrayList<TextureRegion>();
 		int i = 0;
 		while (i < 1) {
@@ -32,7 +32,7 @@ public class Cutscene2 extends PlaybackState {
 		entities.add(new Bulldozer(this, -20.0f, 31.0f));
 		entities.add(new Water(this, -1.0f, -1.0f, this.w / 16 + 2, 8.0f));
 		this.p.unhappy = true;
-		this.gsm.setNextState(8);
+		this.gsm.setNextState(GameStateManager.C3);
 		GameStateManager.rm.playSound(Resources.Sounds.GENERAL, 4);
 		this.rh.setAmbientLight(0.8f, 0.8f, 0.8f, 0.2f);
 	}

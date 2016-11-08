@@ -42,7 +42,7 @@ public class Cutscene1 extends PlaybackState {
 		this.getEntities().add(new Hut(this, 14.5f, 3.125f));
 		this.getEntities().add(new Hut(this, 8.25f, 3.125f));
 		System.out.println("called init");
-		this.gsm.setNextState(6);
+		this.gsm.setNextState(GameStateManager.B1);
 		GameStateManager.rm.playSong(5);
 		GameStateManager.rm.loadSoundPack(Resources.Sounds.GENERAL);
 		for (Sound s : GameStateManager.rm.getSoundPack(Resources.Sounds.GENERAL)) {
@@ -187,7 +187,7 @@ public class Cutscene1 extends PlaybackState {
 				for (Entity e : this.getEntities()) {
 					if (!(e instanceof Bulldozer))
 						continue;
-					this.gsm.setNextState(6);
+					this.gsm.setNextState(GameStateManager.B1);
 					if (e.body.getPosition().x <= (float) (this.w - 80) / 16.0f)
 						continue;
 					System.out.println("218");

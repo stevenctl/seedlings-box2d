@@ -44,7 +44,7 @@ public class Cutscene3 extends PlaybackState {
 		entities.add(new Water(this, 0.0f, 0.0f, 11.25f, 4.375f));
 		entities.add(this.p2);
 		this.p.unhappy = true;
-		this.gsm.setNextState(9);
+		this.gsm.setNextState(GameStateManager.L4);
 	}
 
 	@Override

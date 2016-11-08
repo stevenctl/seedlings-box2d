@@ -35,7 +35,7 @@ public class Boss1 extends PlayGameState {
 		this.getEntities().add(b);
 		GameStateManager.rm.playSound(Resources.Sounds.GENERAL, 4);
 		GameStateManager.rm.playSong(2);
-		this.gsm.setNextState(7);
+		this.gsm.setNextState(GameStateManager.C2);
 	}
 
 	@Override
