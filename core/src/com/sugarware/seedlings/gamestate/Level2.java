@@ -26,7 +26,7 @@ public class Level2 extends PlayGameState {
 	public void init() {
 		super.init();
 		this.p = new VanillaCharacter(this, 3.0f, 22.01f);
-		this.gsm.setNextState(3);
+		this.gsm.setNextState(GameStateManager.L3);
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 

@@ -28,7 +28,7 @@ public class Level3 extends PlayGameState {
 		this.p = new VanillaCharacter(this, 3.0f, 22.01f);
 		for (float i = -1; i + 6 <= w / 16f; i += 6)
 			getEntities().add(new Water(this, i, 0, 6, 0.5f));
-		this.gsm.setNextState(5);
+		this.gsm.setNextState(GameStateManager.C1);
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 
