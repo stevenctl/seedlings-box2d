@@ -29,8 +29,9 @@ public class GameStateManager {
 	public static final int C2 = 7;
 	public static final int C3 = 8;
 	public static final int L4 = 9;
+	public static final int L5 = 10;
 	public static final int TEST = 99;
-	public static final int D1 = 4;
+	
 	public SpriteBatch g;
 
 	public GameStateManager(GdxGame game, int index) {
@@ -163,6 +164,9 @@ public class GameStateManager {
 		}
 		case L4: {
 			return new Level4(this);
+		}
+		case L5: {
+			return new Level5(this);
 		}
 		case TEST: {
 			return new DemoLevel(this);
