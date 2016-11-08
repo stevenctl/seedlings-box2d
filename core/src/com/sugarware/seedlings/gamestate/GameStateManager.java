@@ -31,7 +31,6 @@ public class GameStateManager {
 	public static final int L4 = 9;
 	public static final int TEST = 99;
 	public static final int D1 = 4;
-	public static final int LONE = -1;
 	public SpriteBatch g;
 
 	public GameStateManager(GdxGame game, int index) {
@@ -138,35 +137,35 @@ public class GameStateManager {
 
 	public GameState stateLookup(int index) {
 		switch (index) {
-		case 0: {
+		case MM: {
 			return new MenuState(this);
 		}
-		case 1: {
+		case L1: {
 			return new Level1(this);
 		}
-		case 6: {
+		case B1: {
 			return new Boss1(this);
 		}
-		case 2: {
+		case L2: {
 			return new Level2(this);
 		}
-		case 3: {
+		case L3: {
 			return new Level3(this);
 		}
-		case 7: {
+		case C2: {
 			return new Cutscene2(this);
 		}
-		case 5: {
+		case C1: {
 			return new Cutscene1(this);
 		}
-		case 8: {
+		case C3: {
 			return new Cutscene3(this);
 		}
-		case 9: {
+		case L4: {
 			return new Level4(this);
 		}
-		case 99: {
-			return new Cutscene2(this);
+		case TEST: {
+			return new DemoLevel(this);
 		}
 		}
 		System.err.println("Invalid state index: " + index);
