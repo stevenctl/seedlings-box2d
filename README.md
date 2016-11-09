@@ -36,6 +36,7 @@ right side - jump<br>
 
 ## Credits
 Programming - Steven Landow
+
 Art - Trent Brew
 
 
