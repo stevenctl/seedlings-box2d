@@ -1,60 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="70" height="70" tilewidth="16" tileheight="16" nextobjectid="101">
- <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="70" tilewidth="16" tileheight="16" nextobjectid="110">
+ <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420" columns="28">
   <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
  </tileset>
- <layer name="Tile Layer 4" width="70" height="70">
+ <layer name="Tile Layer 4" width="140" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt1ssJwlAQRuFJXGsHxrUW4lLwWYAF+GjAhYILH2WmDyegIFfjjRsncc4H/yImyOUQRBEAAAAAAIDfGSciE91UN9PNdYvE+lT2WrqVdljrNrqtjiwiPd1JQ5x1F91V17U+FNBAo2AQOZTMq/S+si6p3dFMZU8Lmzw+9yyX1y656Ynq4xgMAAA0j9f/wA/t4DqNzIt+cJ1F1mR7o9XRp/MOIve/+a5/6sL78n7LyP1/bmT9rjS5S6fic966xH5/vXYZVnzOW5dlxee8ddlVfM5bl1+uLqw70IUudKELXehSsO5AF7rQhS50oUvBugNd6EIXunhqUrBuQRe60IUudKFLwbpFXbvcAC6giXw=
+   eJzt2UtOwlAUxvF2BRodGZeg0ZExaqJDjY7VDfhahqLuwvdrE77dhG+XoVM/QkoiJfT09iKX8v8lX0gILRc4nHMLUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPI6U847vQh0jTvlvtOLQNCulRvlVhmIo+jHcAx9qHc9Ky/Kq/KmDMbZx9CHul/ynb9QLpUrh3OMqVbGDfVS7UOWukK4ku/8g/KoPDmcY1E1sGSoA2tdIVzVz/Bdtx/Kp/LlcI7vyLZ/sdYVwuVjRljPYa0rhMvHjKjWAfuX3uDjM2T/0jt89RfLnMl63JQyrcwUWw7a6D/3L8njdpU9Zb/hmGVlRVktthy0kY/+Yj1H8rhj5UQ5bTimT6ko/cWWUzek8w8z/7zycY3r63p6JKrVy2ix5dRN6LkmHV4bddbcut6TDWVT2Srw/rSaR9u6f0epxNlzaz6q1cuC+1L+mNVzzTm8Ltc6g02reXSg+w+Vozh7bvmeR65c66wZelWadaZlzS3f8ygE9Ko0a7389zwKgc9eVRa++ksyj9b8LAuBsl4fZfWXZB51ev+C9rL+Xmfd75Zp/4I06+911v0u/aXcfO936S/l5uv/6WQelen6CGnWerH+H8D1UbnRX5AH/QV50F+QB/WCPJhH5fILYQ9Z5w==
   </data>
  </layer>
- <layer name="Tile Layer 3" width="70" height="70">
+ <layer name="Tile Layer 3" width="140" height="70">
   <data encoding="base64" compression="zlib">
-   eJztm0lu1EAUhu2w7ixgTViHBbcIC0Agxj2RgCDEeAAEgYAYT8A83YAV0zEYss4Z2PKXui2Kx2+7qtruqrLfJ/1yq1Ou4XfVe+V2XBSKoiiKoiiKMuUN9BZ6B72HPsTtTlQ+QZ+hL9BX6Fvc7iTDd+gH9BP6Bf2O250k2V2qLwzjyx7oDnQX2ipj9ygNDsCHbRxf4vgKej0SX45jnCegk9Ap6DR0xhr7IXw+PDAvlhx0GWO+Al2FrkHXoRvl9G/ncDwPXYA2ArwpRVu7uhhUB6w46AE6/xB6BD2GnkBPy//L7Qtof28HdfTBpoOWyXkTx3JtyHpC6ugDF1/2k/NWa8r55iRZD2srBi6+HCTnrdWU881Jsh7WVgxcfFkn5511LNeGrCekjj5wjS8yR7H4ctOxzVuYS7ehzTL/+CJzD4svrmN6Bj+eQy/K/OPLjhCLLyFjyj2+XIQuWeex+BIyJllPTuvI9NX4cgQ6OhOLL8Y/3zwt68lpHZm+Gl82oHszsfhi4q5vnpb15DRf7PVxbHZk8SVkTLKenHyx9xT3Z0e2jlzXgJ2nZXzJaR2Za7hV/PXEwNaRa9y187T0Jad8xK4hW0frpFwbOe/r2DWcZ79rk/O+jl3DJcdybeS8r2PjXSHlQq51F2uxD7qMLyHXeij7l4q6/a4v0t+c4gsb7zz30zY55qPlot6Xru6nc1xHTb6w++ku5ksq66gJ33GG+mKTSp5uIoYvqeTpJmL4kkp8aUJ94cTwRePuFI27HI27HPWFo75wcsxHvrlhLPnINzeE+LI6Z5sx8F3rY4kvvowlvviivnBCYuYYfAn93dtmiL6ExMzY8+XjAtoIed6Y4/5F97v/UvXVpY/2uIa+323yRX7XpS8pPZ9muPgyEce68q5tGVJ6Ps2I6Uuu8UV9ycuXyRzn+rRR1LSzaF+q99nYe2zyPYMx+VK9z8beY5PvGfSd4xfpi31/xHyZ1HwvGdp8WbM+s/FX/wfSNhe6ni9/AIi/FiE=
+   eJzt0jERgEAQBMF7EIJHcIAAsAwSWJK/oLtq8w2mCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAP/Zgx6SP9HEFuyd9pI/zw7ZRtbxbx7SbNKETEjohoRMSOiGhEwAAAADo4wHU8xl/
   </data>
  </layer>
- <layer name="Tile Layer 2" width="70" height="70">
+ <layer name="Tile Layer 2" width="140" height="70">
   <data encoding="base64" compression="zlib">
-   eJztW0tO3EAQLROJrCASrAlSspqJBDdgN7OA7MlnxSA+Upbks5pB4gL8zhLlQhHKCZJtqiWXaDVly23Krh53PelpRna53f2m6rnd9gAA/EX+gzyxhrxi6LBRAGwWWj3TxQiqddlBTXYz1WUC1brkXEd1+ZJzHdXlS8515FClyz5qcmC6mL8EMH/hYf7Cw/yFx5D8xf2ML4TaGpK/bCG3hdoakr+4eepYqK0h+Yubp06F2mqryyHu+4D8WPIT8rOyjm59YF2oLU6XExzfKfIMeV4x1gvc/hX5reR35I8ydsWjlA82Qde6NME1anCDvC15h7wfeL60xZpIj553/hR1GYn0qD1S0IU7/0SoT22Rgi7cPMHqiD+/1ZHlSxW4eaXlC8CM2Wa++4gv3vcjoT61Raq6aCMVXQ6Q74X6IYE+1hma4Ax5LtQPCfSxzrCMcP7GXQ/aYEi6zJELoba60MUtN6w0oPTajIbv+uMJQTrQ+zRu/fl1A24Dr1dbaPgujZUbC+2j9yOa3g9U6dV2fti173Ia0VhdnnK/O/XLHaN1P9C173KksY6D4xz8mnbbtO4HuvZdLl9orNPgOAe/pmPqSBpd+y5HuveZBcc5+DWtWUcavjsv9y2YWL+mNetIynfr3lOtigUmduHF+J99Q8p3Y3QZwVNdCFTT2rpI+UuMLhOo1oVqOkdduDoiTL0Y/7NvpKbLzIvxP/uGhi51/pKK72r6yzoTl7PvHpX7xkxcqIvWvE7TX6ZMXHg90prXafrLjInL+Xrk+wsEceH1KKc68v0FgrjwepRTHdX5S+i7Ws8dpXT5CTL+ksp9gNQ6wy+I95cFExf67rL7yyXE+ws3rwt9V8tfpPLlGOL9hZvXpXIfILUu9Qri/aWJ7y7784B3EO8vTXx32Z8HxOQLXXu581LujoLYviHlu5QvbwuAN0W9LvOadih3td8j+418EGjnD3IV9XiJ3Csev8eCckj7PTKD4TmQ/L/jkCD5f0eDwWAw9I//VbkQ8A==
+   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwaZIAAB
   </data>
  </layer>
- <layer name="Tile Layer 1" width="70" height="70">
+ <layer name="Tile Layer 1" width="140" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt3DFqAlEYRtHfBYi12YGkNjtwIdlKKsFNGwtJgneqQCLMOfD1w2WYVzyY88yczexXu1hu7bb//QBPSpemS9Ol6dJuXT5ia3fvwk+6NF2aLk2X9v084osuTZemS9Ol6dKc0+0wupTT6FLeR5fi+9J0abo0XZouTZemS9Ol6dJ0abo0XZouTZemyzJdmi5Nl6ZL06Xp0nRp7mGX6fLI+wIAAADAX9tvZl5ia3f8bPAWW7vd+A9BeZ3ucgVv4Lox
+   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwaZIAAB
   </data>
  </layer>
  <objectgroup name="Collisions">
-  <object id="83" x="0" y="272" width="160" height="288"/>
-  <object id="84" x="224" y="272" width="96" height="256"/>
-  <object id="85" x="320" y="528" width="112" height="16"/>
-  <object id="86" x="416" y="544" width="105.333" height="16"/>
-  <object id="87" x="512" y="272" width="80" height="848"/>
-  <object id="88" x="736" y="192" width="32" height="784"/>
-  <object id="89" x="1024" y="48" width="96" height="912"/>
-  <object id="90" x="1024" y="1072" width="96" height="48"/>
-  <object id="91" x="800" y="1024" width="32" height="96"/>
-  <object id="92" x="640" y="1072" width="48" height="48"/>
-  <object id="93" name="plat" x="752" y="1072">
+  <object id="102" name="plat" x="496" y="880">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="95" name="plat" x="464" y="480">
+  <object id="103" name="plat" x="576" y="832">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="96" name="plat" x="320" y="432">
-   <polyline points="0,0 48,0"/>
+  <object id="104" x="0" y="880" width="192" height="16"/>
+  <object id="105" x="672" y="816" width="48" height="288"/>
+  <object id="107" name="plat" x="992" y="848">
+   <polyline points="0,0 32,0"/>
   </object>
-  <object id="97" name="plat" x="464" y="368">
-   <polyline points="0,0 48,0"/>
+  <object id="108" name="plat" x="1216" y="864">
+   <polyline points="0,0 32,0"/>
   </object>
-  <object id="98" name="plat" x="320" y="320">
-   <polyline points="0,0 48,0"/>
-  </object>
-  <object id="99" name="plat" x="304" y="224">
-   <polyline points="0,0 48,0"/>
-  </object>
-  <object id="100" name="plat" x="160" y="272">
-   <polyline points="0,0 64,0"/>
+  <object id="109" name="plat" x="1520" y="896">
+   <polyline points="0,0 32,0"/>
   </object>
  </objectgroup>
- <objectgroup name="Entities"/>
+ <objectgroup name="Entities">
+  <object id="101" name="vine" x="336" y="688">
+   <polyline points="0,0 0,112"/>
+  </object>
+  <object id="106" name="vine" x="192" y="736">
+   <polyline points="0,0 0,80"/>
+  </object>
+ </objectgroup>
 </map>

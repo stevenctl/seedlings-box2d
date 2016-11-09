@@ -2,14 +2,18 @@ package com.sugarware.seedlings.gamestate;
 
 import java.util.ArrayList;
 
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
 import com.sugarware.seedlings.Resources;
 import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
+import com.sugarware.seedlings.entities.Water;
 
 public class Level5 extends PlayGameState {
 	float shift = -50.0f;
+	boolean zoomedOut = false;
+	float defaultW, defaultH;
 
 	public Level5(GameStateManager gsm) {
 		super(gsm, "tilemaps/level5.tmx");
@@ -20,6 +24,9 @@ public class Level5 extends PlayGameState {
 			++i;
 		}
 		this.ss = new ScrollSelector(icons, 2.0f, 1.5f, 1.5f, this);
+		this.defaultH = this.cam.viewportHeight;
+		this.defaultW = this.cam.viewportWidth;
+
 	}
 
 	@Override
@@ -27,8 +34,10 @@ public class Level5 extends PlayGameState {
 		super.init();
 		this.p = new VanillaCharacter(this, 3.0f, 62.01f);
 		this.gsm.setNextState(GameStateManager.MM);
-//		entities.add(new Water(this, 0.0f, 29.0f, 258 / this.ppt, 3.0f));
-//		entities.add(new Water(this, 0.0f, 0.0f, (this.w + 32) / this.ppt, 245 / this.ppt));
+		for (int i = 0; i < this.w; i += 128) {
+			entities.add(new Water(this, i, 0, 128, 3.0f));
+		}
+
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 
@@ -43,6 +52,7 @@ public class Level5 extends PlayGameState {
 
 	@Override
 	public void touchDown(Vector3 coords, int pointer) {
+		System.out.println("Player Coords: " + this.p.body.getPosition());
 	}
 
 	@Override
@@ -53,7 +63,7 @@ public class Level5 extends PlayGameState {
 	public void keyPressed(int k) {
 		super.keyPressed(k);
 		this.p.keyDown(k);
-		if (k == 37) {
+		if (k == Keys.I) {
 			this.ss.scroll();
 		}
 	}
@@ -80,9 +90,23 @@ public class Level5 extends PlayGameState {
 			this.gsm.nextState();
 			return;
 		}
+
+		if (this.p.body.getPosition().x > 40 && !zoomedOut) {
+			this.cam.viewportWidth = this.defaultW * 1.5f;
+			this.cam.viewportHeight = this.defaultH * 1.5f;
+			zoomedOut = true;
+			this.cam.update();
+		} else if (this.p.body.getPosition().x <= 40 && zoomedOut) {
+			this.cam.viewportWidth = this.defaultW;
+			this.cam.viewportHeight = this.defaultH;
+			zoomedOut = false;
+			this.cam.update();
+		}
+
 		if (this.p.body.getPosition().y < -5.0f) {
 			this.init();
 		}
+
 	}
 
 	@Override
