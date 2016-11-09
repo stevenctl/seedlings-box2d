@@ -28,8 +28,6 @@ public class ScrollSelector {
 	public ScrollSelector(ArrayList<TextureRegion> list, float r, float f, float g, PlayGameState gs) {
 		this.list = list;
 		
-		this.iw = this.gs.scrCam.viewportHeight / 16;
-		this.ih = this.gs.scrCam.viewportHeight / 16;
 		this.coords = new Vector3();
 		this.gs = gs;
 		if (list.size() < 6) {
