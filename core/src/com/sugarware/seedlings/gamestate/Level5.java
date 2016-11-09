@@ -92,13 +92,15 @@ public class Level5 extends PlayGameState {
 		}
 
 		if (this.p.body.getPosition().x > 40 && !zoomedOut) {
-			this.cam.viewportWidth = this.defaultW * 1.5f;
-			this.cam.viewportHeight = this.defaultH * 1.5f;
+			// this.cam.viewportWidth = this.defaultW * 1.5f;
+			// this.cam.viewportHeight = this.defaultH * 1.5f;
+			this.cameraScale = 1.5f;
 			zoomedOut = true;
 			this.cam.update();
 		} else if (this.p.body.getPosition().x <= 40 && zoomedOut) {
-			this.cam.viewportWidth = this.defaultW;
-			this.cam.viewportHeight = this.defaultH;
+			// this.cam.viewportWidth = this.defaultW;
+			// this.cam.viewportHeight = this.defaultH;
+			this.cameraScale = 1f;
 			zoomedOut = false;
 			this.cam.update();
 		}
