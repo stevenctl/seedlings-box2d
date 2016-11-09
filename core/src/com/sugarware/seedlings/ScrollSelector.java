@@ -27,7 +27,7 @@ public class ScrollSelector {
 
 	public ScrollSelector(ArrayList<TextureRegion> list, float r, float f, float g, PlayGameState gs) {
 		this.list = list;
-		
+
 		this.coords = new Vector3();
 		this.gs = gs;
 		if (list.size() < 6) {
@@ -42,18 +42,18 @@ public class ScrollSelector {
 
 	public void draw(SpriteBatch g) {
 		this.coords.x = this.gs.scrCam.viewportWidth;
-		this.coords.y =  this.gs.scrCam.viewportHeight;
-		this.r = this.ih =  this.iw = this.gs.scrCam.viewportHeight / 12;
+		this.coords.y = this.gs.scrCam.viewportHeight;
+		this.r = this.ih = this.iw = this.gs.scrCam.viewportHeight / 12;
 		if (this.cd > 0) {
 			--this.cd;
 		}
 		if (this.scrolling) {
-			this.theta = (float) ((double) this.theta - 6.283185307179586 / (double) this.list.size() / 16.0);
-			if ((double) this.theta >= 6.283185307179586) {
-				this.theta = (float) ((double) this.theta - 6.283185307179586);
+			this.theta = (float) ((double) this.theta - 2 * Math.PI / (double) this.list.size() / 16.0);
+			if ((double) this.theta >= 2 * Math.PI) {
+				this.theta = (float) ((double) this.theta - 2 * Math.PI);
 			}
 			if (this.theta < 0.0f) {
-				this.theta = (float) ((double) this.theta + 6.283185307179586);
+				this.theta = (float) ((double) this.theta + 2 * Math.PI);
 			}
 			if (this.theta >= this.endangle - 0.02f && this.theta <= this.endangle + 0.02f) {
 				this.scrolling = false;
@@ -67,8 +67,8 @@ public class ScrollSelector {
 			float y = (float) (Math.sin(angle + this.theta) * (double) this.r);
 			g.draw(this.list.get(i), this.coords.x + x - this.iw / 2.0f, this.coords.y + y - this.ih / 2.0f, this.iw,
 					this.ih);
-			angle = (float) ((double) angle + 6.283185307179586 / (double) this.list.size());
-			if ((double) angle >= 6.283185307179586) {
+			angle = (float) ((double) angle + 2 * Math.PI / (double) this.list.size());
+			if ((double) angle >= 2 * Math.PI) {
 				angle = 0.0f;
 			}
 			++i;
@@ -85,12 +85,12 @@ public class ScrollSelector {
 			System.out.println(this.sel);
 			this.scrolling = true;
 			this.startangle = this.theta;
-			this.endangle = (float) ((double) this.theta - 6.283185307179586 / (double) this.list.size());
-			if ((double) this.endangle >= 6.283185307179586) {
-				this.endangle = (float) ((double) this.endangle - 6.283185307179586);
+			this.endangle = (float) ((double) this.theta - 2 * Math.PI / (double) this.list.size());
+			if ((double) this.endangle >= 2 * Math.PI) {
+				this.endangle = (float) ((double) this.endangle - 2 * Math.PI);
 			}
 			if (this.endangle < 0.0f) {
-				this.endangle = (float) ((double) this.endangle + 6.283185307179586);
+				this.endangle = (float) ((double) this.endangle + 2 * Math.PI);
 			}
 		}
 	}
