@@ -198,6 +198,8 @@ public abstract class PlayGameState extends GameState {
 	protected void keyPressed(int k) {
 		if (k == Keys.F2) {
 			saveScreenshot();
+		}else if (k == Keys.EQUALS){
+			debugCollisions = !debugCollisions;
 		}
 	}
 
