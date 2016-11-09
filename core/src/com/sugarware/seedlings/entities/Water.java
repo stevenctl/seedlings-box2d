@@ -27,16 +27,18 @@ public class Water extends Entity {
 	float scaleX;
 	float scaleY;
 	Vector3 coords;
+	Vector3 tempVector;
 
-	public Water(PlayGameState gs, float x, float y, float f, float g) {
+	public Water(PlayGameState gs, float x, float y, float w, float h) {
 		super(gs);
 		this.scaleX = (float) Gdx.graphics.getWidth() / this.gs.cam.viewportWidth;
 		this.scaleY = (float) Gdx.graphics.getHeight() / this.gs.cam.viewportHeight;
 		this.x = x;
 		this.y = y;
-		this.width = f;
-		this.height = g;
-		this.coords = gs.cam.project(new Vector3(x, y, 0.0f));
+		this.width = w;
+		this.height = h;
+		tempVector = new Vector3(x, y, 0.0f);
+		this.coords = gs.cam.project(tempVector);
 		this.waterShader = new ShaderProgram(Shaders.vertexShader, Shaders.waterFragmentShader);
 		this.waterShader2 = new ShaderProgram(Shaders.vertexShader, Shaders.water2FragmentShader);
 		this.s = new ShapeRenderer();
@@ -45,6 +47,10 @@ public class Water extends Entity {
 
 	@Override
 	public void update() {
+		tempVector.set(x, y, 0f);
+		this.coords = gs.cam.project(tempVector);
+		this.scaleX = (float) Gdx.graphics.getWidth() / this.gs.cam.viewportWidth;
+		this.scaleY = (float) Gdx.graphics.getHeight() / this.gs.cam.viewportHeight;
 	}
 
 	public void updateshaders() {
@@ -83,7 +89,7 @@ public class Water extends Entity {
 		this.coords = this.gs.cam.project(this.coords);
 		this.scr.setTexture((Texture) this.gs.fbo.getColorBufferTexture());
 		int vshift = (int) (0.13f * (float) Gdx.graphics.getHeight());
-		this.scr.setRegion((int) this.coords.x , (int) this.coords.y + vshift + 8, (int) (this.width * this.scaleX),
+		this.scr.setRegion((int) this.coords.x, (int) this.coords.y + vshift + 8, (int) (this.width * this.scaleX),
 				(int) (this.height * this.scaleY));
 		this.scr.flip(false, true);
 		float toph = (float) GameStateManager.rm.water_top.getRegionHeight() / 16.0f;
