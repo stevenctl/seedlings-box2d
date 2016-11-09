@@ -29,6 +29,7 @@ import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.sugarware.seedlings.GdxGame;
 import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.ContactHandler;
 import com.sugarware.seedlings.entities.Entity;
@@ -70,7 +71,8 @@ public abstract class PlayGameState extends GameState {
 	public boolean drawGUI;
 	private static int counter = 1;
 	BitmapFont scoreFont;
-	OrthographicCamera scrCam;
+	public OrthographicCamera scrCam;
+	protected float cameraScale = 1f;
 
 	public PlayGameState(GameStateManager gsm, String mapPath) {
 		super(gsm);
@@ -86,7 +88,8 @@ public abstract class PlayGameState extends GameState {
 		ppt = (Integer) prop.get("tilewidth", Integer.class);
 		w = (Integer) prop.get("width", Integer.class) * ppt;
 		h = (Integer) prop.get("height", Integer.class) * ppt;
-		fbo = new FrameBuffer(Gdx.app.getType() == ApplicationType.Desktop ? Format.RGBA4444 : Format.RGB565, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
+		fbo = new FrameBuffer(Gdx.app.getType() == ApplicationType.Desktop ? Format.RGBA4444 : Format.RGB565,
+				Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
 		world = new World(new Vector2(0.0f, -31.6f), false);
 		ch = new ContactHandler();
 		world.setContactListener(ch);
@@ -135,6 +138,20 @@ public abstract class PlayGameState extends GameState {
 		world.step(Gdx.graphics.getDeltaTime(), 30, 30);
 		rh.setWorld(world);
 		p.update();
+
+		float goalCamW = GdxGame.WIDTH * cameraScale;
+		float goalCamH = GdxGame.HEIGHT * cameraScale;
+
+		if (Math.abs(cam.viewportWidth - goalCamW) > 2) {
+			cam.viewportWidth += (cam.viewportWidth < goalCamW ? 1 : -1) * 0.25f;
+		}
+
+		if (Math.abs(cam.viewportHeight - goalCamH) > 1) {
+			cam.viewportHeight += (cam.viewportHeight < goalCamH ? 1 : -1) * 0.25f;
+		}
+
+		cam.update();
+
 		cam.position.set(p.body.getPosition().x, p.body.getPosition().y, 0.0f);
 		if (cam.position.x - cam.viewportWidth / 2.0f < 0.0f) {
 			cam.position.x = cam.viewportWidth / 2.0f;
@@ -198,7 +215,7 @@ public abstract class PlayGameState extends GameState {
 	protected void keyPressed(int k) {
 		if (k == Keys.F2) {
 			saveScreenshot();
-		}else if (k == Keys.EQUALS){
+		} else if (k == Keys.EQUALS) {
 			debugCollisions = !debugCollisions;
 		}
 	}
@@ -253,9 +270,7 @@ public abstract class PlayGameState extends GameState {
 		rh.setCombinedMatrix(cam);
 		rh.updateAndRender();
 		g.begin();
-		if (ss.list.size() > 2) {
-			ss.draw(g);
-		}
+
 		for (Entity e22 : getEntities()) {
 			if (!(e22 instanceof Hint))
 				continue;
@@ -269,6 +284,10 @@ public abstract class PlayGameState extends GameState {
 		scrCam.update();
 		g.setProjectionMatrix(scrCam.combined);
 		g.begin();
+		if (ss.list.size() > 2) {
+			ss.draw(g);
+			
+		}
 		if (score > 0 && !(this instanceof PlaybackState)) {
 			g.draw(LeafCoin.img, 2, scrCam.viewportHeight - 50, 48, 48);
 			if (scoreFont == null) {
@@ -350,10 +369,11 @@ public abstract class PlayGameState extends GameState {
 		score++;
 		scored++;
 	}
-	
-	public void resize(int w, int h){
+
+	public void resize(int w, int h) {
 		fbo.dispose();
-		fbo = new FrameBuffer(Gdx.app.getType() == ApplicationType.Desktop ? Format.RGBA4444 : Format.RGB565, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
+		fbo = new FrameBuffer(Gdx.app.getType() == ApplicationType.Desktop ? Format.RGBA4444 : Format.RGB565,
+				Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
 		System.out.println("FBO: " + fbo.getWidth() + "x" + fbo.getHeight());
 	}
 }
