@@ -30,6 +30,8 @@ public class GameStateManager {
 	public static final int C3 = 8;
 	public static final int L4 = 9;
 	public static final int L5 = 10;
+	public static final int L6 = 11;
+	
 	public static final int TEST = 99;
 	
 	public SpriteBatch g;
@@ -167,6 +169,9 @@ public class GameStateManager {
 		}
 		case L5: {
 			return new Level5(this);
+		}
+		case L6: {
+			return new Level6(this);
 		}
 		case TEST: {
 			return new DemoLevel(this);
