@@ -34,8 +34,8 @@ public class Hint extends Entity {
 		BodyDef bdef = new BodyDef();
 		if (filter == null) {
 			filter = new Filter();
-			Hint.filter.categoryBits = 4;
-			Hint.filter.maskBits = 13;
+			Hint.filter.categoryBits = CollisionBits.NOLIGHT_CATEGORY;
+			Hint.filter.maskBits = CollisionBits.NOLIGHT_MASK;
 		}
 		bdef.type = BodyDef.BodyType.StaticBody;
 		bdef.position.set(x, y);
@@ -60,7 +60,7 @@ public class Hint extends Entity {
 				parameter.size = 32;
 				parameter.color = Color.WHITE;
 				font = generator.generateFont(parameter);
-				
+
 			}
 			if (this.oldpos == null) {
 				this.oldpos = new Vector2();
