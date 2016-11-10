@@ -69,7 +69,7 @@ public abstract class Player extends Entity {
 	static final Class<?>[] danger;
 
 	static {
-		danger = new Class[] { Bulldozer.class, Robot.class };
+		danger = new Class[] { Bulldozer.class, Robot.class, DangerShape.class };
 	}
 
 	public Player(float x, float y, PlayGameState gs) {
@@ -443,15 +443,15 @@ public abstract class Player extends Entity {
 	@Override
 	public void collide(Entity e) {
 		if (!(this.gs instanceof PlaybackState)) {
-			Class<?>[] arrclass = danger;
-			int n = arrclass.length;
-			int n2 = 0;
-			while (n2 < n) {
-				Class<?> c = arrclass[n2];
+			Class<?>[] dangerousEntityClasses = danger;
+			int numCollisions = dangerousEntityClasses.length;
+			int i = 0;
+			while (i < numCollisions) {
+				Class<?> c = dangerousEntityClasses[i];
 				if (c.isInstance(e)) {
 					this.dead = true;
 				}
-				++n2;
+				++i;
 			}
 		}
 	}

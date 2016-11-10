@@ -22,6 +22,7 @@ import com.badlogic.gdx.physics.box2d.Shape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.sugarware.seedlings.entities.Box;
+import com.sugarware.seedlings.entities.DangerShape;
 import com.sugarware.seedlings.entities.Entity;
 import com.sugarware.seedlings.entities.Hint;
 import com.sugarware.seedlings.entities.LeafCoin;
@@ -98,6 +99,15 @@ public class MapLoader {
 				x = rect.getRectangle().getX() / ppt;
 				y = rect.getRectangle().getY() / ppt;
 				entities.add(new LeafCoin(gs, x, y));
+			} else if (ob.getName().equals("dangerShape")) {
+				PolygonMapObject polyOb = (PolygonMapObject) ob;
+				PolygonShape polyShape = MapLoader.getPolygon(polyOb);
+				x = polyOb.getPolygon().getOriginX() / ppt;
+				y = polyOb.getPolygon().getOriginY() / ppt;
+
+				entities.add(new DangerShape(gs, x, y, polyShape));
+				polyShape.dispose();
+
 			} else if (ob.getName().contains("hint")) {
 				rect = (RectangleMapObject) ob;
 				x = rect.getRectangle().getX() / ppt;
