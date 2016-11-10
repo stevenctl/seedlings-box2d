@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
+import com.sugarware.seedlings.ResourceManager;
 import com.sugarware.seedlings.Resources;
 import com.sugarware.seedlings.ScrollSelector;
 import com.sugarware.seedlings.entities.VanillaCharacter;
@@ -26,13 +27,14 @@ public class Level5 extends PlayGameState {
 		this.ss = new ScrollSelector(icons, 2.0f, 1.5f, 1.5f, this);
 		this.defaultH = this.cam.viewportHeight;
 		this.defaultW = this.cam.viewportWidth;
+		GameStateManager.rm.playSong(Resources.Sounds.Songs.MEADOW2);
 
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.p = new VanillaCharacter(this, 3.0f, 62.01f);
+		this.p = new VanillaCharacter(this, 3.0f ,16.1f);
 		this.gsm.setNextState(GameStateManager.MM);
 		for (int i = 0; i < this.w; i += 128) {
 			entities.add(new Water(this, i, 0, 128, 3.0f));

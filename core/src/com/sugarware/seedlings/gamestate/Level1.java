@@ -22,6 +22,7 @@ public class Level1 extends PlayGameState {
 		}
 		this.ss = new ScrollSelector(icons, 2.0f, 1.5f, 1.5f, this);
 	}
+	
 
 	@Override
 	public void init() {

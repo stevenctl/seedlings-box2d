@@ -374,6 +374,9 @@ public abstract class PlayGameState extends GameState {
 		fbo.dispose();
 		fbo = new FrameBuffer(Gdx.app.getType() == ApplicationType.Desktop ? Format.RGBA4444 : Format.RGB565,
 				Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
+		cam.viewportWidth = GdxGame.WIDTH * cameraScale;
+		cam.viewportHeight = GdxGame.HEIGHT * cameraScale;
+		cam.update();
 		System.out.println("FBO: " + fbo.getWidth() + "x" + fbo.getHeight());
 	}
 }

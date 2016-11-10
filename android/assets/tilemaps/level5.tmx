@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="70" tilewidth="16" tileheight="16" nextobjectid="110">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="207" height="70" tilewidth="16" tileheight="16" nextobjectid="143">
  <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420" columns="28">
   <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
  </tileset>
- <layer name="Tile Layer 4" width="140" height="70">
+ <layer name="Tile Layer 4" width="207" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt2UtOwlAUxvF2BRodGZeg0ZExaqJDjY7VDfhahqLuwvdrE77dhG+XoVM/QkoiJfT09iKX8v8lX0gILRc4nHMLUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPI6U847vQh0jTvlvtOLQNCulRvlVhmIo+jHcAx9qHc9Ky/Kq/KmDMbZx9CHul/ynb9QLpUrh3OMqVbGDfVS7UOWukK4ku/8g/KoPDmcY1E1sGSoA2tdIVzVz/Bdtx/Kp/LlcI7vyLZ/sdYVwuVjRljPYa0rhMvHjKjWAfuX3uDjM2T/0jt89RfLnMl63JQyrcwUWw7a6D/3L8njdpU9Zb/hmGVlRVktthy0kY/+Yj1H8rhj5UQ5bTimT6ko/cWWUzek8w8z/7zycY3r63p6JKrVy2ix5dRN6LkmHV4bddbcut6TDWVT2Srw/rSaR9u6f0epxNlzaz6q1cuC+1L+mNVzzTm8Ltc6g02reXSg+w+Vozh7bvmeR65c66wZelWadaZlzS3f8ygE9Ko0a7389zwKgc9eVRa++ksyj9b8LAuBsl4fZfWXZB51ev+C9rL+Xmfd75Zp/4I06+911v0u/aXcfO936S/l5uv/6WQelen6CGnWerH+H8D1UbnRX5AH/QV50F+QB/WCPJhH5fILYQ9Z5w==
+   eJzt20lu1FAQBmD3CUCwAo4AghUgQAJ2IFgBSbgA0yZMJ4AAizCdgHm6BDOXYOYYsKVakaMmQvaL+8ntdn+f9CutqNt6iVypsuNXFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQvhODojgZORWZi8xHFgaTXhV032LUycXIpcjlyJXIVbUDtZajTm5H7kTuRu5F7qsdqFTOa0NzGeplSxxjq7pjBixmPs93x/H2qJ0kzyLPJ70IGlvOfJ4fjOMdihxWP7XeRd5PehEwJV5H3kTeRjbF35c/CZ/Rn6AoPke+RL5GvkU2J/Rn/Yk+KXvBi8jLyKsGx9gZdbMroXaG/SmlxmAalL3gQ+Rj5FODYxyLejieUBOpNQbTYHg+f4+vPyI/I78aHON3kXa9k1pjMA1yzFGpx0itMZgGOeaoYU243mHW5DifXe8wi3L1nZRZrO59+yL7IwfGWw60os3rnfJ9NyI3I7fWfGY+shA5Pd5yemt0j025z2b0tT037crRd1KPUb7vceRJ5Omaz2yILEU2jrecVcPnebf16Fwa3WNT7rMZfW3PTbty3DfOdY96e7FSOzvGW86q4fO8exv8bF2tudE9NuU+m9HX9ty052z8ns9FzkcujPE7r5rZrsX3r0eWBvWz3ZFipXaONl/KP8rnederac3BelXNbA/i+w8jjwb1s13uma2ppjX3P13tYXRD6txXN9vlntm6QA+jSmrttD2zdUHOHkb/5Oo75cx2Js+yoPNS77PV9Z1yZpv09Q60JfV/o6n3Cvp0vQNVUv83mnqvQN9hVuS+V6DvMCtyPUddzmx9us8GVVJrJ/WZHPfZmBX6DjSj70Az+g40o3agGTMbffUX0EVyUA==
   </data>
  </layer>
- <layer name="Tile Layer 3" width="140" height="70">
+ <layer name="Tile Layer 3" width="207" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt0jERgEAQBMF7EIJHcIAAsAwSWJK/oLtq8w2mCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAP/Zgx6SP9HEFuyd9pI/zw7ZRtbxbx7SbNKETEjohoRMSOiGhEwAAAADo4wHU8xl/
+   eJzt3Utu1EAQxnEb1myGNbBmE07BZrICBHsOwCscAAiw4BUOwBuOwTuXAALkGAlLvhHTijGZri4zo0x3/39SKYrsWKPIJVdVt5OmAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ7xWvPmP40CtPig+dr4/18aPAzW4rTy4o7jbzj5nR7Gr+KT4rNhUvFW8U7xXjPSz3xf+SYHlsNX8ud9f6L5/qXgVyZ2QGz8UPxXbii+Kr4pv02vtLvoDA0siPEtSrCh3Thm5dTRyHCiJ534f67zVzrmbveNWbgElCfd7Sr8T6rtZ+rkFlGw0vd9T+h2rn2FWgJqsGPf7TR2/pVhv7fpuci1mBaiFNSt4qnx4pnjeps8KUuo/IHeeWcHIeK6EZ1hK/QfkLvYsudH+e24sz8bUbKhImI3tV2c96eXJpL6L5Q6zAtRk5KizmBUAezz3O/sKUDLvewDznBVQsyFn3vcAPPtorFkBNRty5q2bwr6CWbpro9ZaEDUbctZ9jvT3agbhnZtwfqzO6q6NTvbkWHM29oIiV+POOzbbM85Jfedmv/WdWG5YeVi6NUdcP6DPiNlCXfUr8fxYndVf37HWPj3vApVowxGPD+gz4m+e/Zp9nncQrGvXvp9tPSFO6HdySHG4st/NsvLs1+wLz5KUtVFrjuZZZy0ROZM37/tn3vWdmmfUxxTHI0HO5M3bc8xzX4G13y13R5q0uoycydOQ9Z157isoeUZ9siFnStOdFXj7HesdhP61rZqt5OfO6SaeN+RMfrqzAm+/E5s7T2bU3WvXvq/gYhPPHeTN2+/Me1ZQcu5Y/Q7yNmR9xzsrOKM42+79Perz+nph+lyqud9B3rz9jvdvG07OvaS4rLiiuKq4plgbsC6bG6vfQd68/Y4n18Ic7Z7ivuKB4qHikWIjYZaQO/qdsg3pdzw1W80zavqdsg3pd5gVpKHfKZu335nn/0EofVZAv1O2Re5ns65d+qzA6nd+A57C6X0=
   </data>
  </layer>
- <layer name="Tile Layer 2" width="140" height="70">
+ <layer name="Tile Layer 2" width="207" height="70">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwaZIAAB
+   eJzt200KwjAYBND0GHoPXeoxtHoMrR7Dvwv7LbIKBYUGa+l7MMtCFhloFpMSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPzerklpH2lzDpFjM/ap4P+doifnSJdziVx1Bz66RU/ukUfOM/LSHfhaqy8AjMD/GgAAQB2reF+tB76xFvH90juNmdnEnd8OvPc1+gdzVKN/AAAAMCXlxqaMzQ30Kzc2ZWxuoF+5sSljcwMAAAAAAAAAAAAAAABMyRu9lhkc
   </data>
  </layer>
- <layer name="Tile Layer 1" width="140" height="70">
+ <layer name="Tile Layer 1" width="207" height="70">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbwaZIAAB
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4M4mgAAQ==
   </data>
  </layer>
  <objectgroup name="Collisions">
@@ -41,6 +41,49 @@
   <object id="109" name="plat" x="1520" y="896">
    <polyline points="0,0 32,0"/>
   </object>
+  <object id="128" name="plat" x="2320" y="896">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="129" name="plat" x="2320" y="704">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="130" name="plat" x="2114.31" y="687.633">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="131" name="plat" x="1744" y="896">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="132" name="plat" x="2112" y="832">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="133" name="plat" x="2016" y="752">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="134" name="plat" x="2016" y="592">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="135" name="plat" x="1744" y="976">
+   <polyline points="0,0 48,0"/>
+  </object>
+  <object id="136" name="plat" x="1824" y="848">
+   <polyline points="0,0 160,0"/>
+  </object>
+  <object id="137" name="plat" x="2192" y="592">
+   <polyline points="0,0 96,0"/>
+  </object>
+  <object id="138" name="plat" x="2496" y="624">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="139" name="plat" x="2704" y="704">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="140" name="plat" x="2976" y="720">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="141" name="plat" x="2019.91" y="655.042">
+   <polyline points="0,0 41.2585,0"/>
+  </object>
+  <object id="142" x="3184" y="912" width="192" height="192"/>
  </objectgroup>
  <objectgroup name="Entities">
   <object id="101" name="vine" x="336" y="688">
