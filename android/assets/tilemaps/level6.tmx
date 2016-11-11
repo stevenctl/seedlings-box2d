@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="207" height="45" tilewidth="16" tileheight="16" nextobjectid="148">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="207" height="45" tilewidth="16" tileheight="16" nextobjectid="155">
  <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420" columns="28">
   <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
+ </tileset>
+ <tileset firstgid="421" name="Jungle_environment" tilewidth="16" tileheight="16" tilecount="91" columns="13">
+  <image source="tilesets/Jungle_environment.png" width="208" height="112"/>
  </tileset>
  <layer name="Tile Layer 4" width="207" height="45">
   <data encoding="base64" compression="zlib">
@@ -10,7 +13,7 @@
  </layer>
  <layer name="Tile Layer 3" width="207" height="45">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="Tile Layer 2" width="207" height="45">
@@ -101,8 +104,12 @@
   <object id="106" name="vine" x="192" y="336">
    <polyline points="0,0 0,80"/>
   </object>
-  <object id="147" name="dangerShape" x="128.5" y="458">
-   <polygon points="0,0 -6,80.5 42,137 97.5,115 111.5,71.5 96,17 53,-9.5"/>
+  <object id="150" name="dangerShape" x="523.261" y="405.13">
+   <polygon points="0,0 5.3913,16.3043 15.3913,7.65217"/>
   </object>
+  <object id="153" name="dangerShape" x="32" y="368" width="57" height="22">
+   <ellipse/>
+  </object>
+  <object id="154" name="dangerShape" x="118" y="361" width="33" height="29"/>
  </objectgroup>
 </map>

@@ -1,16 +1,19 @@
 package com.sugarware.seedlings.gamestate;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.MapObjects;
 import com.badlogic.gdx.maps.objects.CircleMapObject;
+import com.badlogic.gdx.maps.objects.EllipseMapObject;
 import com.badlogic.gdx.maps.objects.PolygonMapObject;
 import com.badlogic.gdx.maps.objects.PolylineMapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.objects.TextureMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.Circle;
+import com.badlogic.gdx.math.Ellipse;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -100,13 +103,33 @@ public class MapLoader {
 				y = rect.getRectangle().getY() / ppt;
 				entities.add(new LeafCoin(gs, x, y));
 			} else if (ob.getName().equals("dangerShape")) {
-				PolygonMapObject polyOb = (PolygonMapObject) ob;
-				PolygonShape polyShape = MapLoader.getPolygon(polyOb);
-				x = polyOb.getPolygon().getOriginX() / ppt;
-				y = polyOb.getPolygon().getOriginY() / ppt;
+				System.out.println("Danger Shape Class: " + ob.getClass());
+				Shape shape = null;
+				x = -1;
+				y = -1;
+				if (PolygonMapObject.class.isInstance(ob)) {
+					PolygonMapObject polyOb = (PolygonMapObject) ob;
+					PolygonShape polyShape = MapLoader.getPolygon(polyOb);
+					x = polyOb.getPolygon().getOriginX() / ppt;
+					y = polyOb.getPolygon().getOriginY() / ppt;
+					shape = polyShape;
+				} else if (CircleMapObject.class.isInstance(ob)) {
+					CircleMapObject circOb = (CircleMapObject) ob;
+					CircleShape circShape = MapLoader.getCircle(circOb);
+					x = circOb.getCircle().x / ppt;
+					y = circOb.getCircle().y / ppt;
+					shape = circShape;
 
-				entities.add(new DangerShape(gs, x, y, polyShape));
-				polyShape.dispose();
+				} else if (EllipseMapObject.class.isInstance(ob)) {
+					EllipseMapObject ellpOb = (EllipseMapObject) ob;
+					PolygonShape polyShape = MapLoader.getEllipse(ellpOb);
+					x = ellpOb.getEllipse().x / ppt;
+					y = ellpOb.getEllipse().y / ppt;
+					shape = polyShape;
+				}
+
+				entities.add(new DangerShape(gs, x, y, shape));
+				shape.dispose();
 
 			} else if (ob.getName().contains("hint")) {
 				rect = (RectangleMapObject) ob;
@@ -150,13 +173,19 @@ public class MapLoader {
 		return circleShape;
 	}
 
+	private static PolygonShape getEllipse(EllipseMapObject ellipseObject) {
+		Ellipse ellipse = ellipseObject.getEllipse();
+		PolygonShape polygonShape = new PolygonShape();
+		polygonShape.set(getPolyForElipse(ellipse.width / ppt, ellipse.height / ppt));
+		return polygonShape;
+	}
+
 	private static PolygonShape getPolygon(PolygonMapObject polygonObject) {
 		PolygonShape polygon = new PolygonShape();
 		float[] vertices = polygonObject.getPolygon().getTransformedVertices();
 		float[] worldVertices = new float[vertices.length];
 		int i = 0;
 		while (i < vertices.length) {
-			System.out.println(vertices[i]);
 			worldVertices[i] = vertices[i] / ppt;
 			++i;
 		}
@@ -178,4 +207,32 @@ public class MapLoader {
 		chain.createChain(worldVertices);
 		return chain;
 	}
+
+	public static float[] getPolyForElipse(float w, float h) {
+		float[] vertices = new float[16];
+
+		float a = w > h ? w / 2 : h / 2;
+		float b = w < h ? w / 2 : h / 2;
+
+		int i = 0;
+		for (float t = (float) -Math.PI; t < Math.PI; t += Math.PI / 4f) {
+			vertices[i++] = (float) ((w / 2f) * Math.cos(t));
+
+			vertices[i++] = (float) ((h / 2f) * Math.sin(t));
+
+		}
+
+		boolean s = false;
+		int c = 0;
+		for (float f : vertices) {
+			if (!s) {
+				System.out.print("(" + f + ", ");
+			} else {
+				System.out.println(f + ")" + c++);
+			}
+			s = !s;
+		}
+		return vertices;
+	}
+
 }
