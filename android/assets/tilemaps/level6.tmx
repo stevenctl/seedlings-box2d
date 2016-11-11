@@ -1,115 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="207" height="45" tilewidth="16" tileheight="16" nextobjectid="155">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="107" tilewidth="16" tileheight="16" nextobjectid="338">
  <tileset firstgid="1" name="Jungle_terrainwater" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="420" columns="28">
   <image source="tilesets/Jungle_terrainwater.png" width="504" height="270"/>
  </tileset>
  <tileset firstgid="421" name="Jungle_environment" tilewidth="16" tileheight="16" tilecount="91" columns="13">
   <image source="tilesets/Jungle_environment.png" width="208" height="112"/>
  </tileset>
- <layer name="Tile Layer 4" width="207" height="45">
+ <layer name="Tile Layer 4" width="100" height="107">
   <data encoding="base64" compression="zlib">
-   eJzt20lOFVEUxvH7VqDRkboEDI7UiIky0+BIBdwACBNsWAGiDgB1BfbdJpRGNgG2y9CpX4VcUhJTdbh1Uq+a/y/5wgt5r3IhdTinirohAAAAAAAAAAAAAAAAAGmuD0K4odxUJpUpZXow7FUBzbegOrmj3FXuKfeVRWoHKLWiOllV1pQnylPlGbUDFIrzWmbSoV5O6BgnqTv0wILzeX5WxztH7Zi8Vd4NexFItuJ8nl/S8S4r49RPqQ1lc9iLAFrik/JZWVeO6e/LH8Nn6E9ACDvKrvJV+aYcN/Rn+hO6JPaC98oH5WPCMUZVN2cMtZP1J0uNAW0Qe8GW8kXZTjjGhOrhmqEmrDUGtEF2Pn/X1x/KT+VXwjF+B9v1jrXGgDbwmKOsx7DWGNAGHnNUVhNc76BvPM5nrnfQR159xzKLlb3vgjKmXKy2HKAWdV7vxPc9VB4pjw98ZkqZVm5VW05n5ffYxH02+dfsuamXR9+xHiO+75XyWnlz4DNHlGXlaLXl7Mue5z3VoXMpv8cm7rPJv2bPTb087ht73aMeCXu1c7racvZlz/OeT/jZmlpz+T02cZ9N/jV7buozq9/zbWVOma/wOy+a2Zb0/QfK8qB8trsS9mrnavpS/hGf5z2s1JoDDqtoZnuu779QXg7KZzvvmS1Vas39T1N7GJrBOveVzXbeM1sT0MNQxFo7dc9sTeDZw9A9Xn0nzmwzPssCGs96n62s78SZbdjXO0BdrP8btd4r6NL1DlDE+r9R670C+g76wvteAX0HfeH1HHWc2bp0nw0oYq0d6zM53GdDX9B3gDT0HSANfQdIQ+0AaZjZ0FV/AX9pclA=
+   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
   </data>
  </layer>
- <layer name="Tile Layer 3" width="207" height="45">
+ <layer name="Tile Layer 3" width="100" height="107">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer name="Tile Layer 2" width="207" height="45">
+ <layer name="Tile Layer 2" width="100" height="107">
   <data encoding="base64" compression="zlib">
-   eJzt200KwjAYBND0GHoPXeoxtHoMrR7Dvwv7LbIKBcUGaul7MMtCFhloFpMSAAAAAAAAAAD8ZtektI+0OYfIsRn7VPD/TtGTc6TLuUSuugMf3aIn98gj5xl56Q58rdUXAEbgfw0AAKCOVbyv1gPfWIv4fumdxsxs4s5vB977Gv2DOarRPwAAAJiScmNTxuYG+pUbmzI2N9Cv3NiUsbkBAAAAAAAAAAAAAAAApuQNbLoZHA==
+   eJzt3b1u1EAQwPHxEyT1RSlShxp0iVJAExrSkSNQkjdIQkpOeYGEioIniOjhAQjiXSDUQCrGuludpfN4tfcxa9/9f9LocptmPev1TmzHFgEAAAAAAAAAAMsyKEReaZxE4rXGmyJ3b1ffmeb4XOMiEu80LhmPpbvWHN9ofKiJF/r7o0oAAAAAAAAAq+xLIfK1SP/EcnzT3N4V6Z9oF+ZRuzCP2uNj7g4AAACgE67G0a/U6bcan8X+ntJW6mvsjWN/rt6uvl4xHd+1/YfY31PaynipbcfjGGTazq54XEzHU21/Jvb3lLbQHubhZqbt7IrtYpIrj3jktF1d1Xcej+dO29VVnmNRxqnPZgEAAAAAAAAAAKwd7n0f2TJysCG+19e5933kiZGDXeH6eg7W/n8oXF/Pwdr/w3hwfd2Xtf+/ldF4DP26ArGPV++F9SMHK9+fhPUjByvfod5l/fBl5TvUu0O/rkDi9S7rhy8r36G+Yv3wZeU71FesH76s41Wor4Z+XYHYxyvqqzys4xX1VR7W/h/qK/6fzVfs/BX1ri9rfoT6inrXV6y+Yj33Fauvhn5dgcTrK9ZzX5y/ahfOX7VLme/qvU/hZ85f5VHmO9z71Ks8A5T1PI+6581UnzkDX7HnaaAdvMbjp87FX9wnmuRe8/V7wTkL4/BH4y/jkeSf5uthhvcd1D23nXFYnFnfe1C9d51xAAAAAOBtp+FvEN7/5e+gIc8p7/+qe959GQcyeWfAPLEOmuZGqrprBWWcyOSdAfPEOmiaGwCA2fwHFXvhHQ==
   </data>
  </layer>
- <layer name="Tile Layer 1" width="207" height="45">
+ <layer name="Tile Layer 1" width="100" height="107">
   <data encoding="base64" compression="zlib">
-   eJztw7EJAAAIA7CeL/i0iweIcwKpJKWqqqq6W30FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G4ApqGWXA==
+   eJzt3c0JgDAMBtB2EHEO13MoHUAHs4LHIgr+RHkPSu8NgfTyJSUAAAAAAAAAAAAAAN405JTGfPzmXlN54zkfv4lJH8WijwAA4Dv67RDDWovGvymMttSiUw8AAAAAAAAAAAAAAAAAAAAA2CX/Mxb5nwDwf2f3HdRy281w1zm776CW226GAwAAAADgKQvRwD1f
   </data>
  </layer>
  <objectgroup name="Collisions">
-  <object id="102" name="plat" x="496" y="480">
+  <object id="155" x="2" y="714">
+   <polygon points="0,0 78,-155 -2,-154"/>
+  </object>
+  <object id="156" x="108" y="529">
+   <polygon points="0,0 -11,30 -31,29 -106,29"/>
+  </object>
+  <object id="157" x="0" y="272" width="112" height="256"/>
+  <object id="158" x="272" y="272" width="80" height="336"/>
+  <object id="165" x="0" y="672" width="464" height="320"/>
+  <object id="166" x="80" y="656" width="32" height="16"/>
+  <object id="168" x="144" y="656" width="32" height="16"/>
+  <object id="169" x="224" y="656" width="32" height="16"/>
+  <object id="170" x="304" y="656" width="32" height="16"/>
+  <object id="171" x="400" y="656" width="64" height="16"/>
+  <object id="172" x="528" y="496" width="224" height="336"/>
+  <object id="173" x="752" y="528" width="160" height="128"/>
+  <object id="174" x="912" y="656">
+   <polygon points="0,0 -112,224 -112,0"/>
+  </object>
+  <object id="176" x="532" y="832">
+   <polygon points="0,0 92,48 92,0"/>
+  </object>
+  <object id="177" x="624" y="832" width="176" height="48"/>
+  <object id="179" x="544" y="976" width="48" height="416.5"/>
+  <object id="180" x="688" y="1008" width="48" height="32"/>
+  <object id="181" x="800" y="992" width="48" height="32"/>
+  <object id="183" name="plat" x="112" y="336">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="103" name="plat" x="576" y="432">
+  <object id="184" name="plat" x="224" y="304">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="104" x="0" y="480" width="192" height="16"/>
-  <object id="105" x="672" y="416" width="48" height="322.667"/>
-  <object id="107" name="plat" x="992" y="448">
-   <polyline points="0,0 32,0"/>
-  </object>
-  <object id="108" name="plat" x="1216" y="464">
-   <polyline points="0,0 32,0"/>
-  </object>
-  <object id="109" name="plat" x="1520" y="496">
-   <polyline points="0,0 32,0"/>
-  </object>
-  <object id="128" name="plat" x="2320" y="496">
+  <object id="185" name="plat" x="229" y="368">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="129" name="plat" x="2320" y="304">
+  <object id="186" name="plat" x="114" y="415">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="130" name="plat" x="2114.31" y="287.633">
+  <object id="187" name="plat" x="225.5" y="464.5">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="131" name="plat" x="1744" y="496">
+  <object id="188" name="plat" x="111.5" y="512">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="132" name="plat" x="2112" y="432">
+  <object id="189" name="plat" x="223" y="574.5">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="133" name="plat" x="2016" y="352">
-   <polyline points="0,0 48,0"/>
-  </object>
-  <object id="134" name="plat" x="2016" y="192">
-   <polyline points="0,0 48,0"/>
-  </object>
-  <object id="135" name="plat" x="1744" y="576">
-   <polyline points="0,0 48,0"/>
-  </object>
-  <object id="136" name="plat" x="1824" y="448">
+  <object id="190" name="plat" x="112" y="272">
    <polyline points="0,0 160,0"/>
   </object>
-  <object id="137" name="plat" x="2192" y="192">
-   <polyline points="0,0 96,0"/>
+  <object id="203" x="0" y="1008" width="464" height="384"/>
+  <object id="204" x="464" y="1392" width="80" height="16"/>
+  <object id="205" x="976" y="1008" width="48" height="32"/>
+  <object id="209" x="912" y="1488">
+   <polygon points="0,0 79.3333,-39.3333 80,0"/>
   </object>
-  <object id="138" name="plat" x="2496" y="224">
-   <polyline points="0,0 32,0"/>
+  <object id="210" x="544" y="1392" width="48" height="96"/>
+  <object id="211" x="592" y="1488" width="320" height="48"/>
+  <object id="212" x="992" y="1040" width="32" height="400"/>
+  <object id="213" x="1120" y="112" width="112" height="1328"/>
+  <object id="214" x="1120" y="1440">
+   <polygon points="0,0 64,128 64,0"/>
   </object>
-  <object id="139" name="plat" x="2704" y="304">
-   <polyline points="0,0 32,0"/>
+  <object id="215" x="1184" y="1440" width="416" height="128"/>
+  <object id="220" x="880" y="1632" width="768" height="112"/>
+  <object id="221" x="1024" y="1440">
+   <polygon points="0,0 -96,192 -32,0"/>
   </object>
-  <object id="140" name="plat" x="2976" y="320">
-   <polyline points="0,0 32,0"/>
-  </object>
-  <object id="141" name="plat" x="2019.91" y="255.042">
-   <polyline points="0,0 41.2585,0"/>
-  </object>
-  <object id="142" x="3184" y="512" width="192" height="237.333"/>
-  <object id="143" name="plat" x="2016" y="496">
+  <object id="311" name="plat" x="752" y="352">
    <polyline points="0,0 48,0"/>
   </object>
-  <object id="144" name="plat" x="2112" y="576">
+  <object id="337" name="plat" x="832" y="384">
    <polyline points="0,0 48,0"/>
-  </object>
-  <object id="145" name="plat" x="2192" y="640">
-   <polyline points="0,0 97,0"/>
   </object>
  </objectgroup>
  <objectgroup name="Entities">
-  <object id="101" name="vine" x="336" y="288">
-   <polyline points="0,0 0,112"/>
+  <object id="191" name="dangerShape" x="476.909" y="697.545">
+   <polygon points="0,0 5.36364,4.18182 8.54545,-5.36364"/>
   </object>
-  <object id="106" name="vine" x="192" y="336">
-   <polyline points="0,0 0,80"/>
+  <object id="192" name="dangerShape" x="510.304" y="781.913">
+   <polygon points="0,0 6.05929,-4.64032 -3.75889,-10.0949"/>
   </object>
-  <object id="150" name="dangerShape" x="523.261" y="405.13">
-   <polygon points="0,0 5.3913,16.3043 15.3913,7.65217"/>
+  <object id="193" name="dangerShape" x="479.25" y="1367.75">
+   <polygon points="0,0 1.375,-7.375 5.5,0.375"/>
   </object>
-  <object id="153" name="dangerShape" x="32" y="368" width="57" height="22">
-   <ellipse/>
+  <object id="196" name="dangerShape" x="495.375" y="1368">
+   <polygon points="0,0 1.375,-7.375 5.5,0.375"/>
   </object>
-  <object id="154" name="dangerShape" x="118" y="361" width="33" height="29"/>
+  <object id="197" name="dangerShape" x="511.375" y="1367.88">
+   <polygon points="0,0 1.375,-7.375 5.5,0.375"/>
+  </object>
+  <object id="198" name="dangerShape" x="528" y="1368.75">
+   <polygon points="0,0 1.375,-7.375 5.5,0.375"/>
+  </object>
+  <object id="206" name="dangerShape" x="955" y="1012.5">
+   <polygon points="0,0 2.75,8.5 11,4.5"/>
+  </object>
+  <object id="207" name="dangerShape" x="1008.75" y="977.5">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="223" name="dangerShape" x="625.5" y="1458">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="224" name="dangerShape" x="639.818" y="1457.09">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="225" name="dangerShape" x="657.273" y="1457.27">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="226" name="dangerShape" x="675.636" y="1458.55">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="227" name="dangerShape" x="689.636" y="1456.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="228" name="dangerShape" x="704.545" y="1457.45">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="229" name="dangerShape" x="720" y="1457.27">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="230" name="dangerShape" x="736.909" y="1457.82">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="231" name="dangerShape" x="752.545" y="1457.82">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="232" name="dangerShape" x="767.091" y="1456.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="234" name="dangerShape" x="784.182" y="1456.73">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="235" name="dangerShape" x="801.091" y="1456.55">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="236" name="dangerShape" x="816.545" y="1456.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="237" name="dangerShape" x="832.364" y="1457.27">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="238" name="dangerShape" x="848.545" y="1455.64">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="239" name="dangerShape" x="864.545" y="1457.09">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="240" name="dangerShape" x="879.455" y="1457.64">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="241" name="dangerShape" x="895.818" y="1456.36">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="242" name="dangerShape" x="909.818" y="1460.36">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="243" name="dangerShape" x="941.636" y="1445.27">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="244" name="dangerShape" x="973.273" y="1428.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="245" name="dangerShape" x="608.364" y="1444.36">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="246" name="dangerShape" x="1041.09" y="1600.41">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="247" name="dangerShape" x="1056.91" y="1600.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="248" name="dangerShape" x="1072.45" y="1600.18">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="249" name="dangerShape" x="1088.09" y="1600.91">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="250" name="dangerShape" x="1104.18" y="1600.64">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="251" name="dangerShape" x="1043.12" y="1366.38" rotation="-314.308">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="252" name="dangerShape" x="1043.45" y="1188.36" rotation="-314.308">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="254" name="dangerShape" x="1043.64" y="1044.55" rotation="-314.308">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="256" name="dangerShape" x="1099.45" y="1155.82" rotation="-389.525">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="257" name="dangerShape" x="1098.91" y="1254.45" rotation="-389.525">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="258" name="dangerShape" x="1098.55" y="1301.36" rotation="-389.525">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="280" name="dangerShape" x="592.841" y="464.7">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="281" name="dangerShape" x="577.386" y="464.88">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="282" name="dangerShape" x="625.386" y="465.25">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="283" name="dangerShape" x="562.477" y="464.34">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="284" name="dangerShape" x="639.932" y="464.34">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="285" name="dangerShape" x="548.477" y="465.98">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="286" name="dangerShape" x="609.75" y="465.25">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="287" name="dangerShape" x="703.591" y="464.2">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="288" name="dangerShape" x="688.136" y="464.38">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="289" name="dangerShape" x="736.136" y="464.75">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="290" name="dangerShape" x="673.227" y="463.84">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="292" name="dangerShape" x="659.227" y="465.48">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="293" name="dangerShape" x="720.5" y="464.75">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="294" name="dangerShape" x="815.591" y="496.45">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="295" name="dangerShape" x="800.136" y="496.63">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="296" name="dangerShape" x="848.136" y="497">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="297" name="dangerShape" x="785.227" y="496.09">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="298" name="dangerShape" x="862.682" y="496.09">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="299" name="dangerShape" x="771.227" y="497.73">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="300" name="dangerShape" x="832.5" y="497">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="304" name="dangerShape" x="895.477" y="495.09">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="306" name="dangerShape" x="881.477" y="496.73">
+   <polygon points="0,0 -2.75,7.75 6.25,7.25"/>
+  </object>
+  <object id="308" name="vine" x="592" y="304">
+   <polyline points="0,0 0,68.5"/>
+  </object>
+  <object id="309" name="vine" x="704" y="256">
+   <polyline points="0,0 0,90.5"/>
+  </object>
+  <object id="314" name="coin" x="136" y="318"/>
+  <object id="315" name="coin" x="248" y="291"/>
+  <object id="316" name="coin" x="251" y="352"/>
+  <object id="317" name="coin" x="137" y="401"/>
+  <object id="318" name="coin" x="247" y="449"/>
+  <object id="319" name="coin" x="138" y="499"/>
+  <object id="320" name="coin" x="246" y="563"/>
+  <object id="321" name="coin" x="95" y="642"/>
+  <object id="322" name="coin" x="239" y="641"/>
+  <object id="323" name="coin" x="569" y="955"/>
+  <object id="325" name="coin" x="712" y="988"/>
+  <object id="326" name="coin" x="820" y="973"/>
+  <object id="327" name="coin" x="765" y="958"/>
+  <object id="328" name="coin" x="976" y="987"/>
+  <object id="329" name="coin" x="1067" y="1109"/>
+  <object id="330" name="coin" x="1068" y="1182"/>
+  <object id="331" name="coin" x="1046" y="1275"/>
+  <object id="332" name="coin" x="1239" y="1611"/>
+  <object id="333" name="coin" x="1458" y="1612"/>
+  <object id="334" name="coin" x="1503" y="1613"/>
+  <object id="335" name="coin" x="1551" y="1611"/>
+  <object id="336" name="coin" x="773" y="332"/>
  </objectgroup>
 </map>

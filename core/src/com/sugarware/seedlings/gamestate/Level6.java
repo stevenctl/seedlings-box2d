@@ -11,9 +11,12 @@ import com.sugarware.seedlings.entities.VanillaCharacter;
 import com.sugarware.seedlings.entities.Water;
 
 public class Level6 extends PlayGameState {
-	float shift = -50.0f;
+
 	boolean zoomedOut = false;
 	float defaultW, defaultH;
+
+	float targetlight = 0.8f;
+	float light = 0.8f;
 
 	public Level6(GameStateManager gsm) {
 		super(gsm, "tilemaps/level6.tmx");
@@ -33,12 +36,12 @@ public class Level6 extends PlayGameState {
 	@Override
 	public void init() {
 		super.init();
-		this.p = new VanillaCharacter(this, 3.0f ,16.1f);
+		this.p = new VanillaCharacter(this, 3.0f, h / 16);
 		this.gsm.setNextState(GameStateManager.MM);
 		for (int i = 0; i < this.w; i += 128) {
 			entities.add(new Water(this, i, 0, 128, 3.0f));
 		}
-
+		entities.add(new Water(this, 0, 64f, 25, 1.5f));
 		this.rh.setAmbientLight(1.0f, 1.0f, 1.0f, 0.0f);
 	}
 
@@ -95,6 +98,17 @@ public class Level6 extends PlayGameState {
 		if (this.p.body.getPosition().y < -5.0f) {
 			this.init();
 		}
+
+		targetlight = p.body.getPosition().y < 60f && p.body.getPosition().x < 83 ? 0.3f : 0.8f;
+
+		if (light > targetlight) {
+			light -= 0.009f;
+		}
+		if (light < targetlight) {
+			light += 0.009f;
+		}
+
+		rh.setAmbientLight(light, light, light, 1.0f - light);
 
 	}
 
