@@ -1,7 +1,6 @@
 package com.sugarware.seedlings.gamestate;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.MapObjects;
@@ -210,9 +209,6 @@ public class MapLoader {
 
 	public static float[] getPolyForElipse(float w, float h) {
 		float[] vertices = new float[16];
-
-		float a = w > h ? w / 2 : h / 2;
-		float b = w < h ? w / 2 : h / 2;
 
 		int i = 0;
 		for (float t = (float) -Math.PI; t < Math.PI; t += Math.PI / 4f) {
